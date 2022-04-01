@@ -1,225 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<!-- <link rel="stylesheet" href="cart.css"> -->
-<style>
-   
- 
-   #cart1
-{
-    display: flex;
-    justify-content: space-evenly;
-    height: 500px;
-    width: 70%;
-     margin: auto;
-     margin-top: 10%;
-     /* border: 1px solid red; */
-     box-shadow:  rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Intern Theory</title>
+    <link
+      rel="shortcut icon"
+      href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="./style/NavBar.css" />
+    <link rel="stylesheet" href="./style/Menu.css" />
+    <link rel="stylesheet" href="./style/Footer.css" />
+    <link rel="stylesheet" href="./style/changepassword.css" />
+  </head>
+  <!-- <link rel="stylesheet" href="cart.css"> -->
+  <style>
+    * {
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    }
+    #cart1 {
+      display: flex;
+      justify-content: space-evenly;
+      height: 500px;
+      width: 70%;
+      margin: auto;
+      margin-top: 10%;
+      /* border: 1px solid red; */
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      margin-bottom: 40px;
+    }
 
+    #cart2 {
+      /* border: 1px solid black; */
+      width: 40%;
+      height: auto;
+    }
 
-#cart2
-{
-/* border: 1px solid black; */
-width: 40%;
-height: auto;
-}
+    #h2 {
+      margin-left: 5%;
+    }
 
-#h2
-{
-    margin-left: 5%;
-}
+    #cart3 {
+      /* border: 1px solid red; */
+      width: 30%;
+      height: auto;
+      margin-right: 5%;
+      margin-top: 7%;
+      margin-left: 4%;
+    }
 
+    #cartbtn {
+      background-color: #df1e2e;
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      color: white;
+      margin-top: 10%;
+      margin-left: 6%;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-#cart3
-{
-   /* border: 1px solid red; */
-   width: 30%;
-   height: auto;
-   margin-right: 5%;
-   margin-top: 7%;
-   margin-left: 4%;
-}
+    #cartbtn:hover {
+      background-color: rgb(172, 56, 56);
+    }
 
-#cartbtn
-{
-    background-color: #df1e2e;
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    color: white;
-    margin-top: 50%;
-    margin-left: 6%;
-    font-weight: bold;
-    cursor: pointer;
-}
+    #cart-pop1 {
+      height: 400px;
+      width: 50vw;
+      justify-content: center;
+      align-items: center;
+      margin-left: 26%;
+      margin-top: 10%;
+      border: 1px solid white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 5px;
+      background-color: white;
+    }
 
-#cartbtn:hover
-{
-    background-color: rgb(172, 56, 56);
-}
-
-
-#cart-pop1
-{    
-
-    height: 400px;
-    width: 50vw;
-    justify-content: center;
-    align-items: center;
-    margin-left: 26%;
-     margin-top: 10%;
-    border: 1px solid white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        border-radius: 5px;
-    background-color: white;
-}
-
-#cart-pop2
-{
-    
-    height: 250px;
-    width: 90%;
-    /* margin-left: 9%; */
-    margin-top: 8%;
-    /* border: 1px solid black; */
-    /* background-color: green; */
-margin-left: 40px;
- }  
-
-#cart-pop3
-{
-    display: none;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    
+    #cart-pop2 {
+      height: 250px;
+      width: 90%;
+      /* margin-left: 9%; */
+      margin-top: 8%;
+      /* border: 1px solid black; */
+      /* background-color: green; */
       margin-left: 40px;
-   margin-right: 40px;
-   margin-top: 40px;
-   margin-bottom: 40px;
-     gap: 30px; 
-     /* background-color: gray; */
-    
-}
-
-.cart-a1
-{
-    border: 2px solid blue;
-    color: blue;
-    text-align: center;
-    height: 30px;
-    width: 100%;
-    
-}
-.cart-a1:hover
-{
-    background-color:rgb(220, 243, 253);
-    border: 1px solid rgb(33, 104, 185);
-    
-}
-
-.popup
-{
-    position: relative;
-    top: 20vh;
-    width: 75%;
-    height: 90%;
-   visibility: hidden;
-    /* background: gray; */
-    /* overflow: hidden; */
-    transition: all 0ms ease-in-out 1.5s;
-
-}
-
-.popup .p1
-{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-70%,-110%);
-    padding: 20px;
-    width: 600px;
-    /* background: green; */
-    border-radius: 10px;
-    transition: all 0ms ease-in-out 100ms;
-
-}
-
-body.xyz .popup
-{
-    display: visible;
-    top: 0%;
-
-    transition: all 0ms ease-in-out 0ms;
-}
-
-
-body.xyz .popup .p1
-{
-    visibility: visible;
-    top: 50%;
-    transition: all 0ms ease-in-out 20ms;
-}
-
-body.xyz .popup .p1 .closep
-    {
-        
-        top:100%;
-        transition: all 0ms ease-in-out 0ms;
-    }
-    .closep
-    {
-        
-        margin-left: 95%;
-        outline: none;
-        font-size: 1.25rem;
-        font-weight: bold;
-        
     }
 
-    .closep:hover
-{
-    cursor: pointer;
-    color: white;
-    background: red;
-    align-items: center
+    #cart-pop3 {
+      display: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      /* border: 1px solid black; */
+      border-radius: 5px;
 
-    
-}
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      gap: 30px;
+      /* background-color: gray; */
+    }
 
-.cart-anchor
-{
-  text-decoration: none;
-}
+    .cart-a1 {
+      border: 2px solid blue;
+      color: blue;
+      text-align: center;
+      height: 30px;
+      width: 100%;
+    }
+    .cart-a1:hover {
+      background-color: rgb(220, 243, 253);
+      border: 1px solid rgb(33, 104, 185);
+    }
 
+    .popup {
+      position: relative;
+      top: 20vh;
+      width: 75%;
+      height: 90%;
+      visibility: hidden;
+      /* background: gray; */
+      /* overflow: hidden; */
+      transition: all 0ms ease-in-out 1.5s;
+    }
 
+    .popup .p1 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-70%, -110%);
+      padding: 20px;
+      width: 600px;
+      /* background: green; */
+      border-radius: 10px;
+      transition: all 0ms ease-in-out 100ms;
+    }
 
-#cart-hr
-{
-    margin-left:25% ;
-}
+    body.xyz .popup {
+      display: visible;
+      top: 0%;
 
+      transition: all 0ms ease-in-out 0ms;
+    }
 
-#cart-h21
-{
-    color: rgb(243, 208, 10);
-    margin-left: 15%;
-}
+    body.xyz .popup .p1 {
+      visibility: visible;
+      top: 50%;
+      transition: all 0ms ease-in-out 20ms;
+    }
 
-#cart-h21:hover
-{
-cursor: pointer;
-}
+    body.xyz .popup .p1 .closep {
+      top: 100%;
+      transition: all 0ms ease-in-out 0ms;
+    }
+    .closep {
+      margin-left: 95%;
+      outline: none;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
 
-/* #cart-pop1
+    .closep:hover {
+      cursor: pointer;
+      color: white;
+      background: red;
+      align-items: center;
+    }
+
+    .cart-anchor {
+      text-decoration: none;
+    }
+
+    #cart-hr {
+      margin-left: 25%;
+    }
+
+    #cart-h21 {
+      font-size: 16px;
+      color: rgb(243, 208, 10);
+      margin-left: 15%;
+    }
+
+    #cart-h21:hover {
+      cursor: pointer;
+    }
+
+    /* #cart-pop1
 {
     height: 350px;
     width: 45%;
@@ -230,18 +202,16 @@ cursor: pointer;
     border-radius: 5px;
 } */
 
-
-/* #cart-pop2
+    /* #cart-pop2
 {
     height: 250px;
     width: 80%;
     margin-left: 9%;
     margin-top: 8%;
     /* border: 1px solid black; */
-/* } */ 
+    /* } */
 
-
-/* #cart-pop3
+    /* #cart-pop3
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -258,80 +228,315 @@ cursor: pointer;
     text-align: center;
     height: 30px;
 } */
+    /* -------------addtocart css--------------------------------> */
+    #cartcors {
+      margin-left: 20px;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-size: 1rem;
+      height: 70%;
+      width: 140%;
+    }
+    #cartcors > div {
+      /* border: 1px solid red; */
+      justify-content: space-between;
+      display: flex;
+      height: 25%;
+      border-bottom: 0.5px dashed rgb(170, 170, 170);
+    }
+    #corsitem {
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      /* border: 1px solid red; */
+    }
 
-</style>
-<body>
+    #corsitem > img {
+      height: 50px;
+      width: 20%;
+    }
+    #cross {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15px;
+      width: 15px;
+      color: white;
+      border-radius: 50%;
+      background-color: #df1e2e;
+    }
 
+    #pricy {
+      box-sizing: border-box;
+
+      display: flex;
+      align-items: baseline;
+      padding-top: 30px;
+      height: 100%;
+    }
+    #pricy > p {
+      font-size: 12px;
+      margin-right: 5px;
+    }
+
+    .cart31 {
+      height: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #totaldiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #coupon {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    #coupon > button {
+      padding: 10px;
+      color: white;
+      width: 20%;
+      border: none;
+      border-radius: 5px;
+      background-color: #df1e2e;
+    }
+    #coupon > input {
+      height: 25px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    #empty {
+      display: flex;
+      justify-content: right;
+    }
+    #empty > button {
+      padding: 8px;
+      font-size: 18px;
+      background-color: #df1e2e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    #vis {
+      display: none;
+      color: #df1e2e;
+    }
+
+    /* navbar cart nums-------------------> */
+    #NavBarCart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #NavBarCart > i {
+      position: absolute;
+    }
+    #cartno {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      position: relative;
+      bottom: 11px;
+      left: 16px;
+      background-color: #df1e2e;
+    }
+    #cartno > p {
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+  <div id="res"></div>
+  <div id="NavBar"></div>
+  <div id="MenuContainer"></div>
+  <body>
     <div id="cart1">
+      <div id="allelems">
         <div id="cart2">
-    
-        <h2 id="h2">Cart</h2>
+          <h2 id="h2">Cart</h2>
         </div>
-
-        <hr id="cart-hr"> 
-            
-      <div id="cart3">
-          <div class="cart31">Amount</div>
-          <hr>
-          <div class="cart31">CGST 9%</div>
-          <hr>
-          <div class="cart31">SGST 9%</div>
-          <hr>
-
-
-          <h2>Total:</h2>
-          <button id="cartbtn" >Check Out</button>
-          <h3 id="cart-h21">EMI Starting at 915/month ?</h3>
+        <div id="cartcors"></div>
+        <div id="empty">
+          <button>Empty</button>
+        </div>
       </div>
 
-     </div>
+      <hr id="cart-hr" />
 
-
-     <div class="popup" >
-        <div class="p1">
-           
-            <!-- <h1>This is title</h1>
-            <p>This is a Paragraph</p> -->
-            <div id="cart-pop1" class="cart-pop1">
-                <div class="closep">
-                    &timesb; 
-                    </div>
-                <div id="cart-pop2" class="cart-pop1">
-                  
-                        <div id="cart-p">
-                            <h2>Pay Via</h2>
-                        </div>
-                        <div id="cart-pop3" >
-                           
-                                <div class="cart-a1"><a class="cart-anchor" href="demo2.html">CREDIT CARD</a> </div>
-                                <div class="cart-a1"><a class="cart-anchor" href="demo2.html">NET BANKING</a></div>
-                                <div class="cart-a1"><a class="cart-anchor" href="demo2.html">UPI</a></div>
-                            
-                        
-                                <div class="cart-a1"><a class="cart-anchor" href="demo2.html">DEBIT CARD</a></div>
-                                <div class="cart-a1"> <a class="cart-anchor" href="demo2.html">PAYTM</a></div>
-                                <div class="cart-a1"> <a class="cart-anchor" href="demo2.html">EMI(CREDIT CARD)</a></div>
-
-        
-                        </div>
-                </div>
-                
-            </div>
-       
+      <div id="cart3">
+        <div class="cart31">
+          <p>Amount</p>
+          <h4 id="amount"></h4>
         </div>
+        <hr />
+        <div class="cart31">
+          <p>CGST 9%</p>
+          <h4 id="cgst"></h4>
+        </div>
+        <hr />
+        <div class="cart31">
+          <p>SGST 9%</p>
+          <h4 id="sgst"></h4>
+        </div>
+        <hr />
+        <div id="totaldiv">
+          <h2>Total:</h2>
+          <h2 id="total"></h2>
+        </div>
+        <div id="coupon">
+          <input type="text" id="coupn" placeholder="Coupon Code" />
+          <button id="go">GO</button>
+          <p id="vis">Coupon Added Successfuly !</p>
+        </div>
+        <button id="cartbtn">Check Out</button>
+        <h3 id="cart-h21">EMI Starting at 915/month ?</h3>
+      </div>
     </div>
 
-</body>
+    <div class="popup">
+      <div class="p1">
+        <!-- <h1>This is title</h1>
+            <p>This is a Paragraph</p> -->
+        <div id="cart-pop1" class="cart-pop1">
+          <div class="closep">&timesb;</div>
+          <div id="cart-pop2" class="cart-pop1">
+            <div id="cart-p">
+              <h2>Pay Via</h2>
+            </div>
+            <div id="cart-pop3">
+              <div class="cart-a1">
+                <a class="cart-anchor" href="demo2.html">CREDIT CARD</a>
+              </div>
+              <div class="cart-a1">
+                <a class="cart-anchor" href="demo2.html">NET BANKING</a>
+              </div>
+              <div class="cart-a1">
+                <a class="cart-anchor" href="demo2.html">UPI</a>
+              </div>
+
+              <div class="cart-a1">
+                <a class="cart-anchor" href="demo2.html">DEBIT CARD</a>
+              </div>
+              <div class="cart-a1">
+                <a class="cart-anchor" href="demo2.html">PAYTM</a>
+              </div>
+              <div class="cart-a1">
+                <a class="cart-anchor" href="demo2.html">EMI(CREDIT CARD)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Footer"></div>
+  </body>
 </html>
 
-<script >
-    
-document.querySelector("#cartbtn").addEventListener("click",function(){
+<script type="module" src="./Components/NavBarCode.js"></script>
+<script type="module" src="./Components/MenuCode.js"></script>
+
+<script type="module">
+  document.querySelector("#cartbtn").addEventListener("click", function () {
     document.body.classList.add("xyz");
-});
-document.querySelector(".closep").addEventListener("click",function(){
+  });
+  document.querySelector(".closep").addEventListener("click", function () {
     document.body.classList.remove("xyz");
-});
+  });
 
+  //   addtocart finctinality_________________________>
+  //   let cartcourses = JSON.parse(localStorage.getItem("courseArr"));
+  //   console.log(cartcourses.length);
+  let cartcourses = JSON.parse(localStorage.getItem("courseArr"));
+  console.log(cartcourses.length);
 
+  let displaycart = (data) => {
+    document.getElementById("cartcors").innerHTML = null;
+
+    data.map(({ image, title, price, cutprice }, index) => {
+      let div = document.createElement("div");
+      div.id = "corsitem";
+
+      let divx = document.createElement("div");
+      divx.id = "cross";
+      divx.innerText = "x";
+      divx.addEventListener("click", () => {
+        remove(index);
+      });
+
+      let img = document.createElement("img");
+      img.src = image;
+      img.id = "titleimg";
+
+      let name = document.createElement("h5");
+      name.innerText = title;
+      let pricy = document.createElement("div");
+      pricy.setAttribute("id", "pricy");
+
+      let pricep = document.createElement("h4");
+      pricep.innerText = `₹${price}`;
+
+      let cut = document.createElement("p");
+      cut.innerText = `₹${cutprice}`;
+      cut.style = "text-decoration: line-through";
+
+      pricy.append(cut, pricep);
+      div.append(divx, img, name);
+
+      let divmain = document.createElement("div");
+      divmain.append(div, pricy);
+
+      document.getElementById("cartcors").append(divmain);
+    });
+  };
+  displaycart(cartcourses);
+
+  var reduce = () => {
+    let final = cartcourses.reduce((acc, ele) => {
+      return acc + Number(ele.price);
+    }, 0);
+    let amount = document.getElementById("amount");
+    amount.innerText = final;
+    let cgst = document.getElementById("cgst");
+    cgst.innerText = Math.ceil(final * 0.09);
+    let sgst = document.getElementById("sgst");
+    sgst.innerText = Math.ceil(final * 0.09);
+    let total = document.getElementById("total");
+    total.innerText = final + Math.ceil(final * 0.09) * 2;
+
+    document.getElementById("go").addEventListener("click", () => {
+      jack(final);
+    });
+    displaycart(cartcourses);
+  };
+
+  reduce(cartcourses);
+
+  let remove = (index) => {
+    console.log(index);
+    cartcourses.splice(index, 1);
+    localStorage.setItem("courseArr", JSON.stringify(cartcourses));
+    displaycart(cartcourses);
+    reduce(cartcourses);
+    document.getElementById("num").innerText = cartcourses.length;
+  };
+  function jack(final) {
+    if (document.getElementById("coupn").value == "masai20") {
+      document.getElementById("total").innerText = Math.ceil(
+        (final + Math.ceil(final * 0.09) * 2) * 0.8
+      );
+      document.getElementById("vis").style.display = "block";
+    }
+  }
+  document.getElementById("num").innerText = cartcourses.length;
+
+  displaycart(cartcourses);
 </script>
+
+<script type="module" src="./Components/footerCode.js"></script>
+<script type="module" src="./Components/changePasswordCode.js"></script>

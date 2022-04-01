@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Login | Intern Theory</title>
+    <link
+      rel="shortcut icon"
+      href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="./style/NavBar.css" />
+    <link rel="stylesheet" href="./style/Menu.css" />
+    <link rel="stylesheet" href="./style/Footer.css" />
+    <link rel="stylesheet" href="./style/RegisterCandidate.css" />
+  </head>
+  <body>
+    <div id="NavBar"></div>
+    <div id="MenuContainer"></div>
+    <div id="belowNavBar">
+      <form id="StudentLoginForm">
+        <div id="StudentLoginContainer">
+          <h5>Register Candidate</h5>
+          <div>Already have an account?<span>Sign in</span></div>
+          <div>
+            If you are a company looking to hire interns, please login as a
+            company by clicking <span>here</span>.
+          </div>
+          <div>
+            <img
+              src="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg"
+            />
+            <span>REGISTER WITH FACEBOOK</span>
+          </div>
+          <div>
+            <img
+              src="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg"
+            />
+            <span>REGISTER WITH GOOGLE</span>
+          </div>
+          <div>OR</div>
+          <div>
+            <div>
+              <div id="RegisterFirstNameAlert">First Name*</div>
+              <div>
+                <input
+                  required
+                  id="RegisterFirstNameInput"
+                  type="text"
+                  placeholder="First Name*"
+                />
+              </div>
+              <div id="RegisterFirstNameRequired">Required</div>
+            </div>
+            <div>
+              <div id="RegisterLastNameAlert">Last Name*</div>
+              <div>
+                <input
+                  required
+                  id="RegisterLastNameInput"
+                  type="text"
+                  placeholder="Last Name*"
+                />
+              </div>
+              <div id="RegisterLastNameRequired">Required</div>
+            </div>
+          </div>
+          <div>
+            <div id="RegisterEmailAlert">Email*</div>
+            <div>
+              <input
+                required
+                id="RegisterEmailInput"
+                type="email"
+                placeholder="Email*"
+              />
+            </div>
+            <div id="RegisterEmailRequired">Required</div>
+          </div>
+          <div>
+            <div id="RegisterPasswordAlert">Password*</div>
+            <div>
+              <input
+                required
+                id="RegisterPasswordInput"
+                type="password"
+                placeholder="Password*"
+              />
+            </div>
+            <div id="RegisterPasswordRequired">Required</div>
+          </div>
+          <div>
+            <div id="RegisterNumberAlert">Mobile Number*</div>
+            <div>
+              <input
+                required
+                id="RegisterNumberInput"
+                type="number"
+                placeholder="Mobile Number*"
+              />
+            </div>
+            <div id="RegisterNumberRequired">Required</div>
+          </div>
+          <div>
+            <div id="RegisterCityDiv">
+              <input
+                required
+                id="RegisterCityInput"
+                type="text"
+                placeholder="Select City"
+              />
+              <div><i class="fas fa-angle-down"></i></div>
+            </div>
+            <div id="RegisterCityRequired">Required</div>
+            <div id="RegisterCityName"></div>
+          </div>
+          <div>
+            <div id="RegisterPreferenceDiv">
+              <input
+                required
+                id="RegisterPreferenceInput"
+                type="text"
+                placeholder="Preferences Select one or more*"
+              />
+              <div><i class="fas fa-angle-down"></i></div>
+            </div>
+            <div id="RegisterPreferenceRequired">Required</div>
+            <div id="RegisterPreference"></div>
+          </div>
+          <div>
+            <div id="RegisterFindUsDiv">
+              <input
+                required
+                id="RegisterFindUsInput"
+                type="text"
+                placeholder="How did you find us?*"
+              />
+              <div><i class="fas fa-angle-down"></i></div>
+            </div>
+            <div id="RegisterFindUsRequired">Required</div>
+            <div id="RegisterFindUs"></div>
+          </div>
+          <div>
+            <div id="RegisterLookingForDiv">
+              <input
+                required
+                id="RegisterLookingForInput"
+                type="text"
+                placeholder="What are you looking for?*"
+              />
+              <div><i class="fas fa-angle-down"></i></div>
+            </div>
+            <div id="RegisterLookingForRequired">Required</div>
+            <div id="RegisterLookingFor"></div>
+          </div>
+          <div>
+            <input type="text" placeholder="Affiliate Code (if any)" />
+          </div>
+          <input type="submit" value="NEXT" />
+        </div>
+      </form>
+    </div>
+    <div id="Footer"></div>
+  </body>
+</html>
+<script type="module" src="./Components/RegisterCandidate.js"></script>
+<script type="module" src="./Components/footerCode.js"></script>
+<script type="module" src="./Components/NavBarCode.js"></script>
+<script type="module" src="./Components/MenuCode.js"></script>

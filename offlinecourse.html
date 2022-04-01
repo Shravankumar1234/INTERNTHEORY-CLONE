@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline Courses | Intern Theory</title>
+    <link
+      rel="shortcut icon"
+      href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
+    />
+    <script
+      src="https://kit.fontawesome.com/72215895a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/courses.css" />
+      
+    <link rel="stylesheet" href="./style/NavBar.css">
+    <link rel="stylesheet" href="./style/Menu.css">
+    <link rel="stylesheet" href="./style/Footer.css">
+    <link rel="stylesheet" href="./style/changepassword.css">
+
+    <style>
+        #courses{
+    grid-template-rows: 370px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div id="res"></div>
+    <div id="NavBar"></div>
+    <div id="MenuContainer"></div>
+    <div id="bannerdiv">
+      <img
+        id="underbanner"
+        src="https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg"
+      />
+      <img
+        id="banner"
+        src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png"
+        alt=""
+      />
+    </div>
+    <div id="coursehead">
+      <p>Certified Offline Courses</p>
+      <p>
+        Intern Theory launches certified classroom training for select courses
+        in Mumbai. If you are from another city and wish to join our courses,
+        please whatsapp us on 9892041244
+      </p>
+    </div>
+    <div id="courses"></div>
+    <div id="Footer"></div>
+  </body>
+</html>
+
+<script type="module" src="./Components/NavBarCode.js" ></script>
+<script type="module" src="./Components/MenuCode.js"></script>
+
+<script type="module">
+  let OfflineArr = [
+    {
+      image:
+        "https://assets.interntheory.com/courses/banner/1573118304.png",
+      title: "Offline Digital Marketing Course",
+      descp: "Learn the art of digital marketing. Sign up for this offline ...",
+      cutprice: "19999",
+      price: "9999",
+      emi: "EMI Starting at ₹ 572/month",
+      banner:"https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",
+      dis:"Learn the art of digital marketing. Sign up for this offline digital marketing course and learn search engine optimization (seo), social media marketing (smm), search engine marketing (sem) and many other social media strategies.",
+      week:"6 Weeks",
+    },
+    {
+      image:
+        "https://assets.interntheory.com/courses/banner/1573120159.png",
+      title: "Offline Stock Market Course",
+      descp: "Learn how to trade and invest in stock markets. Enroll for t ...",
+      cutprice: "19999",
+      price: "9999",
+      emi: "EMI Starting at ₹ 572/month",
+      banner:"https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png",
+      dis:"Learn how to trade and invest in stock markets. Enroll for this offline stock market course and learn technical analysis and fundamental analysis.",
+      week:"6 Weeks",
+    },
+    {
+      image:
+        "https://assets.interntheory.com/courses/banner/1573120767.png",
+      title: "Offline Tally + GST Course",
+      descp: "Sign up for this offline tally and GST course and learn how ...",
+      cutprice: "15999",
+      price: "7999",
+      emi: "EMI Starting at ₹ 458/month",
+      banner:"https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png",
+      dis:"Sign up for this offline tally and GST course and learn how to effectively use the most widely used accounting software. Learn the concepts of GST offline and how it is integrated with Tally.",
+      week:"4-6 Weeks",},
+    {
+      image:
+        "https://assets.interntheory.com/courses/banner/1573120508.png",
+      title: "Offline Advanced Excel Course",
+      descp: "Master MS Excel. Take the offline ms excel course and learn ....",
+      cutprice: "19999",
+      price: "5999",
+      emi: "EMI Starting at ₹ 343/month",
+      banner:"https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png",
+      dis:"Master MS Excel. Take the offline ms excel course and learn the software which is most widely used in all industries. Learn advanced excel tips and tricks and become an expert of excel.",
+      week:"3 Weeks",},
+  ];
+
+import { coursesappend} from "./scripts/courses.js"
+
+let parent = document.getElementById("courses")
+let num = document.getElementById("num")
+  let cartno = document.getElementById("cartno")
+
+  coursesappend(OfflineArr, parent,num,cartno);
+  let arr = JSON.parse(localStorage.getItem("courseArr"))||[]
+  if(arr==false)
+  {
+       cartno.style.visibility = "hidden"
+  }
+  else{
+    cartno.style.visibility = "visible"
+    cartno.style.background = "#DF1E2E"
+   num.innerText = arr.length
+  }
+
+</script>
+
+<script type="module" src="./Components/footerCode.js"></script>
+<script type="module" src="./Components/changePasswordCode.js"></script>

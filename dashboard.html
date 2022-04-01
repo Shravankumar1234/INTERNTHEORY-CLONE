@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
+    />
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/NavBar.css" />
+    <link rel="stylesheet" href="./css/Footer.css">
+    <link rel="stylesheet" href="./css/changepassword.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="./css/Menu.css">
+</head>
+
+</head>
+<body>
+    <div id="res"></div>
+    <div id="NavBar"></div>
+    <div id="MenuContainer"></div>
+    <div id="message">
+        <h3 class="text">Please Click Here<a href="#" class="anchor1">VERIFY EMAIL</a>& Click Here to <a href="#" class="anchor2" >VERIFY NUMBER</a>
+        </h3>
+    </div>
+    <div id="dashboard">
+        <div class="no1">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="no6">
+        </div>
+        <p class="no7" id="dashboardname"></p>
+        <button class="no2" onclick="change()"> My Profile</button>
+        <hr class="no3">
+        <div class="no4">
+            <div id="danger1" onclick="danger1()"><img class="danger" src="https://www.bing.com/th?id=OIP.dKfVm2OX0XgCgIuwdgYtoAHaHJ&w=254&h=245&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"></div>
+            <div id="dashboardemail"></div>
+        </div>
+        <div class="no5">
+            <div id="danger2" onclick="danger2()"><img class="danger" src="https://www.bing.com/th?id=OIP.dKfVm2OX0XgCgIuwdgYtoAHaHJ&w=254&h=245&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"></div>
+            <div id="dashboardnumber"></div>
+        </div>
+
+       
+    </div>
+    <div id="dash1">
+        <p class="para" >Still in college and want to start a business already? Become our affiliate and kickstart your entrepreneurial journey. <a href="#" class="anchor3">Click here for details</a></p>
+    </div>
+    <div id="dash2">
+        <h3 class="head3">Recommended Courses</h3>
+        <div class="head1">
+            
+            <div id="show1"></div>
+            <div id="show2"></div>
+            <div id="show3"></div>
+        </div>
+        <h3 class="head4">Recommended internships</h3> 
+        <div class="head2">
+           
+            <div id="show4"></div>
+            <div id="show5"></div>
+            <div id="show6"></div>
+            <div id="show7"></div>
+            
+        </div>
+    </div>
+    <div id="dash3">
+        <div>
+        <div class="application" onclick="application()">MY APPLICATIONS</div>
+        
+        <div class="courses" onclick="courses()">MY COURSES</div>
+        </div>
+         <hr class="line3">
+         <div class="maindiv">
+            <div class="firstdiv">
+                <label>Sort By:</label>
+                <select>
+                    <option value="">Latest First</option>
+                    <option value="">Oldest First</option>
+                </select>
+            </div>
+            <div class="seconddiv">
+                <label>Show:</label>
+                <select id="select">
+                    <option value="all">All</option>
+                    <option value="pending">Pending</option>
+                    <option value="rejected">Rejected</option>
+                    <option value="shortlisted">shortlisted</option>
+                    <option value="rejected after">Rejected After Shortlisting</option>
+                    <option value="hired">Hired</option>
+                    <option value="join">Join</option>
+                    <option value="didjoin">Did Not Join</option>
+                    <hr>
+                </select>
+            </div>
+        </div>
+        <div>
+            <img class="icon1" src="data:image/png;base64,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">
+        </div>
+        <div>
+            <p id="paragraph">You Dont have any Applications</p>
+        </div>
+        <div>
+            <button id="button4">Kick Start Your Career Now</button>
+        </div>
+    </div>
+    <div id="Footer"></div>
+
+    
+    
+    <script src="./script/dashboard.js"></script>
+    <script type="module" src="./script/footerCode.js"></script>
+     <script type="module" src="./script/NavBarCode.js"></script>
+     <script type="module" src="./script/MenuCode.js"></script>
+     <script type="module"  src="./script/changePasswordCode.js"></script>
+     <script>
+        
+        let info =JSON.parse(localStorage.getItem("CurrentUser"));
+         console.log(info)
+       let name=document.getElementById("dashboardname");
+       name.innerText=`${info.FirstName} ${info.LastName}`;
+
+       let email=document.getElementById("dashboardemail");
+       email.innerText=info.Email;
+ 
+       let number=document.getElementById("dashboardnumber");
+       number.innerText=info.Number;
+        </script>
+</body>
+</html>

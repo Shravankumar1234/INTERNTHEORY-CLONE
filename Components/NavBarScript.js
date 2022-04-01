@@ -1,5 +1,5 @@
-const NavBar=()=>{
-    return `<div>
+const NavBar = () => {
+  return `<div>
     <div id="MenuButton">
       <i class="fas fa-bars"></i>
     </div>
@@ -13,6 +13,7 @@ const NavBar=()=>{
     </div>
     <div id="NavBarCart">
       <i class="fa-solid fa-cart-shopping"></i>
+      <div id="cartno"><p id="num"></p></div>
     </div>
     <div id="NavBarProfile">
     <img src="https://assets.interntheory.com/creative/default-images/girlProfile.jpg">
@@ -22,8 +23,8 @@ const NavBar=()=>{
     </div>
   </div>`
 }
-const Menu=()=>{
-    return `
+const Menu = () => {
+  return `
   <div>
     <div id="MenuButton2">
       <i class="fas fa-bars"></i>
@@ -77,8 +78,8 @@ const Menu=()=>{
       <div id="CoursesUpArrow"><i class="fas fa-angle-up"></i></div>
     </div>
     <div id="CoursesHiddenOption">
-      <div>Online Courses</div>
-      <div>Classroom Training</div>
+      <div id="online">Online Courses</div>
+      <div id="offline">Classroom Training</div>
     </div>
     <div id="MenuTransactions">
       <div class="MenuBarIcon"><i class="fas fa-dollar-sign"></i></div>
@@ -132,4 +133,4 @@ const Menu=()=>{
     </div>
   </div>`
 }
-export {NavBar,Menu}
+export { NavBar, Menu }

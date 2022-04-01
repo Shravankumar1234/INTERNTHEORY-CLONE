@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #contmin{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap :20px;
+            justify-content: center;
+        }
+        #contmin > div{
+
+        /* border: 1px solid red; */
+            height:800px;
+            /* gap: 20px; */
+            justify-content: center;
+
+            padding-left: 8%;
+            padding-right: 3%;
+        
+        }
+        #parag{
+            font-size: 20px;
+        }
+        #che{
+            font-size: 60px;
+
+            padding-top: 2%;
+
+            line-height: 5px;
+        }
+
+        /* __________________input____________________ */
+     #inc{
+          width: 100%;
+          height: 50px;
+          outline: 0;
+         border-width: 0 0 1px;
+
+      }
+      #inc:hover {
+  border-color: black;
+  border-width: 0 0 2px;
+}
+#inc:focus {
+  border-color: rgb(45, 45, 151);
+}
+#csubmit{
+    width: 16%;
+    height: 40px;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40%;
+    margin-bottom: 7%;
+}
+#csubmit:hover{
+    background-color: brown;
+   
+}
+#cicon{
+    justify-content: center;
+    padding-left: 40%;
+}
+#or{
+    padding-left: 48%;
+    color: #3C4858;
+    font-size: 18px;
+    
+}
+#call{
+    padding-left: 35%;
+    color: #3C4858;
+    font-size: 18px;
+}
+/*       ---------------- map ============------------ */
+#cifrem{
+    height: 100%;
+    width: 100%;
+    padding-top: 2%;
+    /* margin-top: 2%; */
+}
+#gmap{
+    padding-top: 8%;
+}
+/* ---------------- ----   first div ------------ */
+#fd{
+padding-top: 2%;
+/* padding: -25%; */
+}
+/* ////////////// icons style ///////////////// */
+#facebook{
+    color: #3B5998;
+    font-size: 25px;
+}
+#twit{
+
+    /* background-color: blue; */
+    font-size: 25px;
+    color: blue;
+
+}
+#insta{
+    font-size: 25px;
+    background: 000000014;
+   color: #8a3ab9 #e95950 #bc2a8d #fccc63;
+}
+#link{
+    font-size: 25px;
+    color: #345aac;
+}
+#what{
+    font-size: 25px;
+    color: rgb(73, 172, 139);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="contmin">
+        <div id="fd">
+            <p id="che">Contact</p>
+            <p id="parag">Have something to say? Give us a holler through any one of the ways below, and we’ll get back within 24 hours. On a side note, like the rest around us, we  have fallen victims to Social Media. Feel free to get in touch on Facebook,  LinkedIn or Instagram anytime!</p>
+
+            <form action="">
+            <input type="email" name="" id="inc" placeholder="Email Address" onfocus="this.placeholder = 'Enter Email Address' "><br>
+            <br>
+            <input type="number" name="" id="inc" placeholder="Mobile no" onfocus="this.placeholder = 'Enter Mobile no' ">
+            <br>
+            <br>
+          <input type="text" name="" id="inc" placeholder="Subject" onfocus="this.placeholder = 'Enter Subject' ">
+          <br>
+          <br>
+          <input type="text" name="" id="inc" placeholder="Message" onfocus="this.placeholder = 'Enter Message' ">
+          <br>
+          <br>
+          <input type="submit" name="" id="csubmit" value="SUBMIT">
+        </form>
+        <div id="cicon"> 
+           <a id="facebook" href="https://www.facebook.com/interntheory"><i class="fa fa-facebook-square" ></i></a> 
+           <a id="twit" href="https://twitter.com/InternTheory"> <i class="fa fa-twitter-square" ></i></a>
+         <a  id='insta' href="https://www.instagram.com/interntheory/"><i class="fa fa-instagram" ></i></a>
+           <a id="link" href="https://www.linkedin.com/company/interntheory"> <i class="fa fa-linkedin-square" ></i></a>
+           <a id="what" href="https://api.whatsapp.com/send?text=Hi+Interntheory%0D%0A"> <i class="fa fa-whatsapp" ></i></a>
+        </div>
+        <p id="or">OR</p>
+        <p id="call"> Call:   +91 81047 73673</p>
+        </div>
+        <div id="cifrem">
+            <iframe width="600" height="500" id="gmap" src="https://maps.google.com/maps?q=Intern Theory Career Solutions LLP&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+
+
+</script>

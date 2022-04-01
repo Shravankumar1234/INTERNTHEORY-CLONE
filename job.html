@@ -1,334 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job || Interntheory</title>
     <link
       rel="shortcut icon"
       href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
     />
-    <link rel="stylesheet" href="./styl/internship.css">
-    <link rel="stylesheet" href="./style/NavBar.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
-    <link rel="stylesheet" href="./style/Menu.css">
-    <link rel="stylesheet" href="./style/Footer.css">
+    <link rel="stylesheet" href="./styl/internship.css" />
+    <link rel="stylesheet" href="./style/NavBar.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="./style/Menu.css" />
+    <link rel="stylesheet" href="./style/Footer.css" />
+  </head>
+  <body>
+    <!-- search bar is here---------------------------------------------- -->
 
-</head>
-<body>
-
-<!-- search bar is here---------------------------------------------- -->
-
-<div id="searchboxes">
-        
-  <div id="citydiv">
-      <input type="text" name="" id="cities" placeholder="Cities...">
-      <button id="citybtn">  <i class="fa-solid fa-angle-down"></i> </button>  
-      <div id="dropcity">
+    <div id="searchboxes">
+      <div id="citydiv">
+        <input type="text" name="" id="cities" placeholder="Cities..." />
+        <button id="citybtn"><i class="fa-solid fa-angle-down"></i></button>
+        <div id="dropcity">
           <div>
-           <input type="checkbox" name="" id="mu" onclick="city(`Mumbai`)">
-           <label for="mu" onclick="city(`Mumbai`)">Mumbai</label>
+            <input type="checkbox" name="" id="mu" onclick="city(`Mumbai`)" />
+            <label for="mu" onclick="city(`Mumbai`)">Mumbai</label>
           </div>
-          <div> 
-           <input type="checkbox" name="" id="pu" onclick="city(`Pune`)" >
-           <label for="pu" onclick="city(`Pune`)">Pune</label>
-          </div> 
-          <div> 
-              <input type="checkbox" name="" id="ba" onclick="city(`Banglore`)" >
-              <label for="ba" onclick="city(`Banglore`)">Banglore</label>
-             </div> 
-             <div> 
-              <input type="checkbox" name="" id="na" onclick="city(`Nagpur`)" >
-              <label for="na" onclick="city(`Nagpur`)">Nagpur</label>
-             </div> 
-             <div> 
-              <input type="checkbox" name="" id="de" onclick="city(`Delhi`)" >
-              <label for="de" onclick="city(`Delhi`)">Delhi</label>
-             </div>   
-       </div>
-  </div>
- 
-   
-  <div id="typediv">
-      <input type="text" name="" id="type" placeholder="Type...">
-      <button id="typebtn">    
-          <i class="fa-solid fa-angle-down"></i>                
-      </button>
-      <div id="droptype">
           <div>
-           <input type="checkbox" name="" id="fu" onclick="type(`Full Time`)">
-           <label for="fu" onclick="type(`Full Time`)">Full Time</label>
+            <input type="checkbox" name="" id="pu" onclick="city(`Pune`)" />
+            <label for="pu" onclick="city(`Pune`)">Pune</label>
           </div>
-          <div> 
-           <input type="checkbox" name="" id="pa" onclick="type(`Part Time`)">
-           <label for="pa" onclick="type(`Part Time`)">Part Time</label>
-          </div>
-          <div> 
-              <input type="checkbox" name="" id="wf" onclick="type(`Work From Home`)">
-              <label for="wf" onclick="type(`Work From Home`)">Work From Home</label>
-             </div>   
-       </div>
-  </div>
-   
-  <div id="prefdiv">
-      <input type="text" name="" id="pref" placeholder="Preferences...">
-      <button id="prefbtn">
-          <i class="fa-solid fa-angle-down"></i>                
-      </button>
-      <div id="droppref">
           <div>
-           <input type="checkbox" name="" id="a">
-           <label for="a">Finance</label>
+            <input type="checkbox" name="" id="ba" onclick="city(`Banglore`)" />
+            <label for="ba" onclick="city(`Banglore`)">Banglore</label>
           </div>
-          <div> 
-           <input type="checkbox" name="" id="b">
-           <label for="b">Engineering</label>
+          <div>
+            <input type="checkbox" name="" id="na" onclick="city(`Nagpur`)" />
+            <label for="na" onclick="city(`Nagpur`)">Nagpur</label>
           </div>
-          <div> 
-              <input type="checkbox" name="" id="c">
-              <label for="c">Admin</label>
-             </div>
-             <div> 
-              <input type="checkbox" name="" id="d">
-              <label for="d">Advertising</label>
-             </div>
-             <div> 
-              <input type="checkbox" name="" id="e">
-              <label for="e">Digital Marketing</label>
-             </div>
-             <div> 
-              <input type="checkbox" name="" id="f">
-              <label for="f">Marketing</label>
-             </div>
-
-       </div>
-  </div>
-   <p>OR</p>
-  <div id="last">
-      <div id="searchdiv">
-          <input type="text" name="" id="search" placeholder="Search...">
-          <button id="searchbtn">Search</button>
+          <div>
+            <input type="checkbox" name="" id="de" onclick="city(`Delhi`)" />
+            <label for="de" onclick="city(`Delhi`)">Delhi</label>
+          </div>
+        </div>
       </div>
-  </div>
-</div>
 
+      <div id="typediv">
+        <input type="text" name="" id="type" placeholder="Type..." />
+        <button id="typebtn">
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div id="droptype">
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="fu"
+              onclick="type(`Full Time`)"
+            />
+            <label for="fu" onclick="type(`Full Time`)">Full Time</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="pa"
+              onclick="type(`Part Time`)"
+            />
+            <label for="pa" onclick="type(`Part Time`)">Part Time</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="wf"
+              onclick="type(`Work From Home`)"
+            />
+            <label for="wf" onclick="type(`Work From Home`)"
+              >Work From Home</label
+            >
+          </div>
+        </div>
+      </div>
 
-<!-- all interships are here--------------------------------------------------- -->
-  <div id="NavBar"></div>
-  <div id="MenuContainer"></div>
-  <div id="alldiv">
-    <div id="leftimgd">
-      <img id="leftdivimg" src="https://assets.interntheory.com/creative/Internship_left_course_add_02.png" alt="">
+      <div id="prefdiv">
+        <input type="text" name="" id="pref" placeholder="Preferences..." />
+        <button id="prefbtn">
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div id="droppref">
+          <div>
+            <input type="checkbox" name="" id="a" />
+            <label for="a">Finance</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="b" />
+            <label for="b">Engineering</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="c" />
+            <label for="c">Admin</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="d" />
+            <label for="d">Advertising</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="e" />
+            <label for="e">Digital Marketing</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="f" />
+            <label for="f">Marketing</label>
+          </div>
+        </div>
+      </div>
+      <p>OR</p>
+      <div id="last">
+        <div id="searchdiv">
+          <input type="text" name="" id="search" placeholder="Search..." />
+          <button id="searchbtn">Search</button>
+        </div>
+      </div>
     </div>
-    <div id="intermaindiv">
-     <div id='firstallintdiv'>
-     
-       <div id="allintimg">
-         <img id="imgfd" src="https://assets.interntheory.com/creative/logo.png" alt="">
-       </div>
-       <div id="firstlastdiv">
-        <h3 id="titid">Fresher Job Jobs</h3>
-         <h4 id="companydiv">Develop Your Skillset</h4>
-         <p id="allpfdiv">Online Skill Development Programs</p>
-         <p id="allpfdiv">Taught by Industry Experts Internship</p>
-         <p id="allpfdiv">Certified Courses</p>
-         <p id="allpfdiv">Guaranteed Internship Opportunities</p>
-         <h4>Guaranteed Internship Opportunities</h4>
-       </div>
-       <div id="lastdivupgrade">
-         <p>4-6 Weeks</p>
-         <img id="fdimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUkoIeDu9oUrf2zVtZ9TN3-TOK7D2rLsWbQ&usqp=CAU" alt="">
-         <button id="btnfd">UPGRADE SKILLS</button>
-       </div>
-     </div>
-      
+
+    <!-- all interships are here--------------------------------------------------- -->
+    <div id="NavBar"></div>
+    <div id="MenuContainer"></div>
+    <div id="alldiv">
+      <div id="leftimgd">
+        <img
+          id="leftdivimg"
+          src="https://assets.interntheory.com/creative/Internship_left_course_add_02.png"
+          alt=""
+        />
+      </div>
+      <div id="intermaindiv">
+        <div id="firstallintdiv">
+          <div id="allintimg">
+            <img
+              id="imgfd"
+              src="https://assets.interntheory.com/creative/logo.png"
+              alt=""
+            />
+          </div>
+          <div id="firstlastdiv">
+            <h3 id="titid">Fresher Job Jobs</h3>
+            <h4 id="companydiv">Develop Your Skillset</h4>
+            <p id="allpfdiv">Online Skill Development Programs</p>
+            <p id="allpfdiv">Taught by Industry Experts Internship</p>
+            <p id="allpfdiv">Certified Courses</p>
+            <p id="allpfdiv">Guaranteed Internship Opportunities</p>
+            <h4>Guaranteed Internship Opportunities</h4>
+          </div>
+          <div id="lastdivupgrade">
+            <p>4-6 Weeks</p>
+            <img
+              id="fdimg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUkoIeDu9oUrf2zVtZ9TN3-TOK7D2rLsWbQ&usqp=CAU"
+              alt=""
+            />
+            <button id="btnfd">UPGRADE SKILLS</button>
+          </div>
+        </div>
+      </div>
     </div>
-  
-   
-    </div> 
     <div id="Footer"></div>
-
-</body>
+  </body>
 </html>
 
 <script>
+  const internships = [
+    {
+      internship_quality: "Normal",
+      title: "Admin Executive",
+      company_name: "Atma",
+      location: "pune,mumbai",
+      internship_type: "Full Time,Work From Home",
+      category_name: "social service",
+      stipend_type: "None",
+      stipend: "Learn Industry-Demanded Skills",
+      days_left: 29,
+      slug: "social-service-internship-at-atma-mqlvp",
+      logo: "https://assets.interntheory.com/uploads/company/companylogos/e1822db470e60d090affd0956d743cb0e7cdf113/f9d920bb5121b4f9bd050ef51143a49c83601f73com.png",
+    },
+    {
+      internship_quality: "Normal",
+      title: "React Native Application Developer",
+      company_name: "Ishita Drugs & Industries Ltd",
+      location: "ahmedabad",
+      internship_type: "Full Time",
+      category_name: "finance",
+      stipend_type: "Fixed",
+      stipend: "Salary: 50000 - 80000 per month",
+      days_left: 29,
+      slug: "finance-internship-at-ishita-drugs-industries-ltd-wjpcc",
+      logo: "https://assets.interntheory.com/uploads/company/logos/6b8e334bf1906031541d509ea6d60db308db2c38.jpg",
+    },
 
-const internships = [
     {
-      "internship_quality": "Normal",
-      "title": "Admin Executive",
-      "company_name": "Atma",
-      "location": "pune,mumbai",
-      "internship_type": "Full Time,Work From Home",
-      "category_name": "social service",
-      "stipend_type": "None",
-      "stipend": "Learn Industry-Demanded Skills",
-      "days_left": 29,
-      "slug": "social-service-internship-at-atma-mqlvp",
-      "logo": "https://assets.interntheory.com/uploads/company/companylogos/e1822db470e60d090affd0956d743cb0e7cdf113/f9d920bb5121b4f9bd050ef51143a49c83601f73com.png"
+      internship_quality: "Normal",
+      title: "UI/ UX Designer",
+      company_name: "Mpower2gether",
+      location: "bangalore",
+      internship_type: "Part Time,Work From Home",
+      category_name: "digital marketing",
+      stipend_type: "Incentive Based",
+      stipend: "Salary: 40000 - 60000 per month",
+      days_left: 28,
+      slug: "digital-marketing-internship-at-mpower2gether-5p5lu",
+      logo: "https://assets.interntheory.com/uploads/company/logos/82c6b2935e0523bcee710a495cb244bea3b6f3fc.jpg",
     },
     {
-      "internship_quality": "Normal",
-      "title": "React Native Application Developer",
-      "company_name": "Ishita Drugs & Industries Ltd",
-      "location": "ahmedabad",
-      "internship_type": "Full Time",
-      "category_name": "finance",
-      "stipend_type": "Fixed",
-      "stipend": "Salary: 50000 - 80000 per month",
-      "days_left": 29,
-      "slug": "finance-internship-at-ishita-drugs-industries-ltd-wjpcc",
-      "logo": "https://assets.interntheory.com/uploads/company/logos/6b8e334bf1906031541d509ea6d60db308db2c38.jpg"
-    },
-   
-    {
-      "internship_quality": "Normal",
-      "title": "UI/ UX Designer",
-      "company_name": "Mpower2gether",
-      "location": "bangalore",
-      "internship_type": "Part Time,Work From Home",
-      "category_name": "digital marketing",
-      "stipend_type": "Incentive Based",
-      "stipend": "Salary: 40000 - 60000 per month",
-      "days_left": 28,
-      "slug": "digital-marketing-internship-at-mpower2gether-5p5lu",
-      "logo": "https://assets.interntheory.com/uploads/company/logos/82c6b2935e0523bcee710a495cb244bea3b6f3fc.jpg"
+      internship_quality: "Normal",
+      title: "Project Manager",
+      company_name: "Mpower2gether",
+      location: "bangalore",
+      internship_type: "Part Time,Work From Home",
+      category_name: "sales",
+      stipend_type: "Incentive Based",
+      stipend: "Salary: 60000 - 80000 per month",
+      days_left: 28,
+      slug: "sales-internship-at-mpower2gether-m33st",
+      logo: "https://assets.interntheory.com/uploads/company/logos/82c6b2935e0523bcee710a495cb244bea3b6f3fc.jpg",
     },
     {
-      "internship_quality": "Normal",
-      "title": "Project Manager",
-      "company_name": "Mpower2gether",
-      "location": "bangalore",
-      "internship_type": "Part Time,Work From Home",
-      "category_name": "sales",
-      "stipend_type": "Incentive Based",
-      "stipend": "Salary: 60000 - 80000 per month",
-      "days_left": 28,
-      "slug": "sales-internship-at-mpower2gether-m33st",
-      "logo": "https://assets.interntheory.com/uploads/company/logos/82c6b2935e0523bcee710a495cb244bea3b6f3fc.jpg"
+      internship_quality: "Normal",
+      title: "Key Account Manager",
+      company_name: "Tikona Capital",
+      location: "mumbai,pune,surat,ahmedabad,indore,kolkata",
+      internship_type: "Work From Home",
+      category_name: "Research and Analysis",
+      stipend_type: "Fixed",
+      stipend: "Salary: 40000 - 60000 per month",
+      days_left: 28,
+      slug: "research-and-analysis-internship-at-tikona-capital-tentb",
+      logo: "https://assets.interntheory.com/uploads/company/logos/fc63ce9160554e7f237dc988b0e01f72ac601e8a.jpg",
     },
-    {
-      "internship_quality": "Normal",
-      "title": "Key Account Manager",
-      "company_name": "Tikona Capital",
-      "location": "mumbai,pune,surat,ahmedabad,indore,kolkata",
-      "internship_type": "Work From Home",
-      "category_name": "Research and Analysis",
-      "stipend_type": "Fixed",
-      "stipend": "Salary: 40000 - 60000 per month",
-      "days_left": 28,
-      "slug": "research-and-analysis-internship-at-tikona-capital-tentb",
-      "logo": "https://assets.interntheory.com/uploads/company/logos/fc63ce9160554e7f237dc988b0e01f72ac601e8a.jpg"
-    },
-   
-   
-  
-   
   ];
 
-  internships.map(function(el){
-
+  internships.map(function (el) {
     // let div = document.createElement('div')
     // div.id = "leftdiv";
 
-
     let maindiv = document.createElement("div");
 
-    maindiv.id = "maindiv"
+    maindiv.id = "maindiv";
 
     let imgdiv = document.createElement("div");
-    imgdiv.id = "imgdiv"
+    imgdiv.id = "imgdiv";
 
-    let tagdiv = document.createElement('div');
-    tagdiv.id = "tagdiv"
+    let tagdiv = document.createElement("div");
+    tagdiv.id = "tagdiv";
 
-    let lastdiv = document.createElement('div');
-    lastdiv.id ='lastdiv'
+    let lastdiv = document.createElement("div");
+    lastdiv.id = "lastdiv";
 
-    
+    let img = document.createElement("img");
+    img.id = "internimg";
 
-    let img = document.createElement('img');
-    img.id = 'internimg'
-
-    img.setAttribute("src",el.logo);
+    img.setAttribute("src", el.logo);
     imgdiv.append(img);
 
-  
     let title = document.createElement("p");
     title.innerText = el.title;
-    title.id = "titid"
+    title.id = "titid";
 
-    let company_name = document.createElement("p")
+    let company_name = document.createElement("p");
     company_name.innerText = el.company_name;
 
-    company_name.id = 'companydiv'
+    company_name.id = "companydiv";
 
-
-    let internship_type = document.createElement("p")
+    let internship_type = document.createElement("p");
     internship_type.innerText = el.internship_type;
 
-    internship_type.id = "allcl"
+    internship_type.id = "allcl";
 
-    let category_name = document.createElement('p')
+    let category_name = document.createElement("p");
     category_name.innerText = el.category_name;
 
-    category_name.id = "allcl"
-
+    category_name.id = "allcl";
 
     let location = document.createElement("p");
     location.innerText = el.location;
 
-    location.id = "allcl"
+    location.id = "allcl";
 
-    let stipend_type = document.createElement('h5')
-    stipend_type.style = "color:black"
+    let stipend_type = document.createElement("h5");
+    stipend_type.style = "color:black";
     stipend_type.innerText = el.stipend_type;
 
-    let morediv = document.createElement('div')
+    let morediv = document.createElement("div");
     morediv.id = "morediv";
 
-    let lastdivp = document.createElement('p')
-    lastdivp.innerText = "4 weeks left"
+    let lastdivp = document.createElement("p");
+    lastdivp.innerText = "4 weeks left";
 
     // let path = document.createElement("path")
 
-    let shearimg = document.createElement('img');
-    shearimg.id = "shearimg"
-    shearimg.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUkoIeDu9oUrf2zVtZ9TN3-TOK7D2rLsWbQ&usqp=CAU"
+    let shearimg = document.createElement("img");
+    shearimg.id = "shearimg";
+    shearimg.src =
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUkoIeDu9oUrf2zVtZ9TN3-TOK7D2rLsWbQ&usqp=CAU";
     // shearimg.addEventListener("click")
-  
-    let btn1 = document.createElement('button');
-    btn1.id = "viewbtn"
+
+    let btn1 = document.createElement("button");
+    btn1.id = "viewbtn";
     btn1.innerHTML = "VIEW AND APPLY";
-    // btn1.addEventListener("click",function)
-    lastdiv.append(lastdivp,shearimg,btn1)
-   
+    btn1.addEventListener("click", function () {
+      window.location.href = "./onlinecourses.html";
+    });
+    lastdiv.append(lastdivp, shearimg, btn1);
 
     // stipend.className = "allcl"
 
-// morediv.append(btn)
-    // let 
+    // morediv.append(btn)
+    // let
 
-    tagdiv.append(title,company_name,internship_type,category_name,location,stipend_type)
+    tagdiv.append(
+      title,
+      company_name,
+      internship_type,
+      category_name,
+      location,
+      stipend_type
+    );
 
-
-    maindiv.append(imgdiv,tagdiv,lastdiv)
-
+    maindiv.append(imgdiv, tagdiv, lastdiv);
 
     document.querySelector("#intermaindiv").append(maindiv);
 
-  document.getElementById("btnfd").addEventListener("click",function(){
-
-    window.location.href="upgrade.html"
-
-
-  })
-
-
-  })
-
-
+    document.getElementById("btnfd").addEventListener("click", function () {
+      window.location.href = "./onlinecourses.html";
+    });
+  });
 </script>
 
 <script type="module" src="./Components/NavBarCode.js"></script>
@@ -336,6 +342,3 @@ const internships = [
 <script type="module" src="./Components/MenuCode.js"></script>
 
 <script type="module" src="./Components/footerCode.js"></script>
-
-
-

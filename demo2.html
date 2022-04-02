@@ -345,7 +345,7 @@
                     <div id="payment-bar"><a id="payment-anchor1" href="cart.html">&times;</a></div>
                     <div id="payment-Intern">Intern Theory</div>
                     <div id="payment-pur">Purchase Description</div>
-                    <div id="payment-rs">₹ 18,879</div>
+                    <div id="payment-rs"></div>
                     <div id="payment-select">
                         <select name="English" id="payment-language">
                             <option value="0" class="payment-options1">English</option>
@@ -501,6 +501,10 @@
 <script>
 
     document.getElementById("popup-1").classList.toggle("active");
+    
+    let payrs = localStorage.getItem("finalamount")
+console.log(payrs)
+ document.getElementById("payment-rs").innerText = "₹"+" "+payrs;
 
 
 </script>

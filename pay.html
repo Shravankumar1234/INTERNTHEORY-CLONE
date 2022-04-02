@@ -349,7 +349,7 @@ white-space: nowrap;
              <div id="payment-bar123" ><a id="payment-anchor123" href="cart.html">&times;</a></div>
              <div id="payment-Intern">Intern Theory</div>
              <div id="payment-pur">Purchase Description</div>
-             <div  id="payment-rs">₹ 18,879</div>
+             <div  id="payment-rs"></div>
              <div id="payment-select">
                  <select name="English" id="payment-language">
                      <option value="0" class="payment-options1">English</option>
@@ -403,7 +403,7 @@ white-space: nowrap;
                 </div>
                    
                 <a href="knowmore.html" id="cardDetails-knowMore">Know More</a>
-                <input type="submit" id="cardDetails-submit" value="Pay ₹ 18,879">
+                <input type="submit" id="cardDetails-submit" value="">
                 </form>
                
         </div>
@@ -418,9 +418,11 @@ white-space: nowrap;
 
 <script>
 
- 
+let payrs = localStorage.getItem("finalamount")
+console.log(payrs)
+ document.getElementById("payment-rs").innerText = "₹"+" "+payrs;
 
-
+document.getElementById("cardDetails-submit").value = "Pay"+" "+"₹"+" "+payrs;
 
 </script>
 

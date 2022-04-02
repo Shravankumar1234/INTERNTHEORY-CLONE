@@ -533,6 +533,13 @@ border-right: 1px solid black;
     let total = document.getElementById("total");
     total.innerText = final + Math.ceil(final * 0.09) * 2;
 
+    let finalrs = Math.ceil(
+        (final + Math.ceil(final * 0.09) * 2) )
+        console.log(finalrs)
+   localStorage.setItem("finalamount",finalrs)
+
+
+
     document.getElementById("go").addEventListener("click", () => {
       jack(final);
     });
@@ -549,17 +556,30 @@ border-right: 1px solid black;
     reduce(cartcourses);
     document.getElementById("num").innerText = cartcourses.length;
   };
+
+
   function jack(final) {
     if (document.getElementById("coupn").value == "masai20") {
+    
       document.getElementById("total").innerText = Math.ceil(
         (final + Math.ceil(final * 0.09) * 2) * 0.8
       );
       document.getElementById("vis").style.display = "block";
+
     }
+
+  let finalamount = Math.ceil(
+        (final + Math.ceil(final * 0.09) * 2) * 0.8 )
+        console.log(finalamount)
+localStorage.setItem("finalamount",finalamount)
   }
   document.getElementById("num").innerText = cartcourses.length;
 
   displaycart(cartcourses);
+
+
+
+
 </script>
 
 <script type="module" src="./Components/footerCode.js"></script>

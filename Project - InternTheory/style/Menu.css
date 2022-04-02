@@ -1,0 +1,204 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+#MenuContainer {
+  width: 300px;
+  height: 99.2vh;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  top: 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transform: translateX(-300px);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  overflow-y: scroll;
+}
+#MenuContainer::-webkit-scrollbar {
+  display: none;
+}
+
+#MenuContainer > :nth-child(1) {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  height: 56px;
+}
+#MenuProfile {
+  display: flex;
+  justify-content: end;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: #fbfbfb;
+  border-top: solid rgba(198, 196, 196, 0.489) 0.5px;
+  border-bottom: solid rgba(198, 196, 196, 0.489) 0.5px;
+}
+#MenuProfile > :nth-child(2) {
+  padding-left: 10px;
+  min-width: 150px;
+  max-width: 200px;
+}
+#MenuProfileName {
+  color: #3c4858;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+#MenuProfileNumber {
+  color: #000000de;
+  font-size: 13px;
+}
+#MenuProfileImage {
+  width: 60px;
+  height: 60px;
+}
+#MenuProfileImage img {
+  width: 100%;
+  border-radius: 50%;
+}
+#MenuContainer > :nth-child(3) {
+  margin-bottom: 12px;
+  border-bottom: solid rgba(198, 196, 196, 0.853) 0.5px;
+  padding-bottom: 12px;
+}
+#MenuContainer > :nth-child(3) > div {
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#MenuContainer > :nth-child(3) > div:hover {
+  transition-duration: 0.2s;
+  background-color: rgb(238, 238, 238);
+}
+.MenuBarIcon {
+  width: 5%;
+  padding-right: 15px;
+  font-size: 18px;
+  color: #446478;
+}
+.MenuBarList {
+  width: 90%;
+  padding-left: 15px;
+  font-weight: bold;
+}
+#CoursesDownArrow {
+  color: #087cdd;
+}
+#CoursesUpArrow {
+  color: #087cdd;
+}
+#MenuContainer > :nth-child(3) > #Courses2 {
+  display: none;
+  background-color: rgb(238, 238, 238);
+}
+#MenuContainer > :nth-child(3) #CoursesHiddenOption {
+  display: none;
+  margin: 0;
+  padding: 8px 0px;
+}
+#MenuContainer > :nth-child(3) #CoursesHiddenOption:hover {
+  background-color: white;
+}
+#MenuContainer > :nth-child(3) #CoursesHiddenOption > div {
+  padding: 16px 16px 11px 80px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+#MenuContainer > :nth-child(3) #CoursesHiddenOption > div:hover {
+  background-color: rgb(238, 238, 238);
+  transition-duration: 0.2s;
+}
+#RegisterDownArrow {
+  color: #087cdd;
+}
+#RegisterUpArrow {
+  color: #087cdd;
+}
+#MenuContainer > :nth-child(4) > div {
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#MenuContainer > :nth-child(4) > div:hover {
+  background-color: rgb(238, 238, 238);
+  transition-duration: 0.2s;
+}
+#MenuContainer > :nth-child(4) > #Register2 {
+  display: none;
+  background-color: rgb(238, 238, 238);
+}
+#MenuContainer > :nth-child(4) #RegisterHiddenOption {
+  display: none;
+  margin: 0;
+  padding: 8px 0px;
+}
+#MenuContainer > :nth-child(4) #RegisterHiddenOption:hover {
+  background-color: white;
+}
+#MenuContainer > :nth-child(4) #RegisterHiddenOption > div {
+  padding: 16px 16px 11px 80px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+#MenuContainer > :nth-child(4) #RegisterHiddenOption > div:hover {
+  background-color: rgb(238, 238, 238);
+  transition-duration: 0.2s;
+}
+#LoginDownArrow {
+  color: #087cdd;
+}
+#LoginUpArrow {
+  color: #087cdd;
+}
+#MenuContainer > :nth-child(4) > #Login2 {
+  display: none;
+  background-color: rgb(238, 238, 238);
+}
+#MenuContainer > :nth-child(4) #LoginHiddenOption {
+  display: none;
+  margin: 0;
+  padding: 8px 0px;
+}
+#MenuContainer > :nth-child(4) #LoginHiddenOption:hover {
+  background-color: white;
+}
+#MenuContainer > :nth-child(4) #LoginHiddenOption > div {
+  padding: 16px 16px 11px 80px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+#MenuContainer > :nth-child(4) #LoginHiddenOption > div:hover {
+  background-color: rgb(238, 238, 238);
+  transition-duration: 0.2s;
+}
+#MenuButton2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 20px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+#MenuButton2:hover {
+  background-color: rgb(238, 238, 238);
+}
+#MenuButton2 i {
+  font-size: 20px;
+}
+
+#NavBarLogo2 {
+  width: 80px;
+}
+
+#NavBarLogo2 img {
+  width: 90%;
+}

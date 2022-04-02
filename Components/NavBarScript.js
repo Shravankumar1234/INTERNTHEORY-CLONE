@@ -3,8 +3,8 @@ const NavBar = () => {
     <div id="MenuButton">
       <i class="fas fa-bars"></i>
     </div>
-    <div id="NavBarLogo">
-      <img src="https://assets.interntheory.com/creative/logo.png" alt="" />
+    <div  onclick="window.location.href='./index.html'" id="NavBarLogo">
+      <img src="https://assets.interntheory.com/creative/logo.png"/>
     </div>
   </div>
   <div>
@@ -33,7 +33,7 @@ const Menu = () => {
       <img src="https://assets.interntheory.com/creative/logo.png" />
     </div>
   </div>
-  <div id="MenuProfile">
+  <div  onclick="window.location.href='./profile.html'" id="MenuProfile">
     <div id="MenuProfileImage">
       <img src="https://assets.interntheory.com/creative/default-images/girlProfile.jpg">
     </div>
@@ -43,27 +43,27 @@ const Menu = () => {
     </div>
   </div>
   <div>
-    <div id="MenuDashboard">
+    <div onclick="window.location.href='./dashboard.html'" id="MenuDashboard">
       <div class="MenuBarIcon"><i class="fas fa-box"></i></div>
       <div class="MenuBarList">Dashboard</div>
     </div>
-    <div id="MenuProfile2">
+    <div onclick="window.location.href='./profile.html'" id="MenuProfile2">
       <div class="MenuBarIcon"><i class="fas fa-user-circle"></i></div>
       <div class="MenuBarList">Profile</div>
     </div>
-    <div id="MenuHome">
+    <div onclick="window.location.href='./index.html'" id="MenuHome">
       <div class="MenuBarIcon"><i class="fas fa-home"></i></div>
       <div class="MenuBarList">Home</div>
     </div>
-    <div>
+    <div onclick="window.location.href='./internship.html'">
       <div class="MenuBarIcon"><i class="fas fa-th-list"></i></div>
       <div class="MenuBarList">Internships</div>
     </div>
-    <div>
+    <div onclick="window.location.href='./job.html'">
       <div class="MenuBarIcon"><i class="fas fa-briefcase"></i></div>
       <div class="MenuBarList">Jobs</div>
     </div>
-    <div id="MenuPostInternship">
+    <div onclick="window.location.href='./internship.html'" id="MenuPostInternship">
       <div class="MenuBarIcon"><i class="fas fa-indent"></i></div>
       <div class="MenuBarList">Post Internship</div>
     </div>
@@ -85,11 +85,11 @@ const Menu = () => {
       <div class="MenuBarIcon"><i class="fas fa-dollar-sign"></i></div>
       <div class="MenuBarList">Transactions</div>
     </div>
-    <div>
+    <div onclick="window.location.href='./contact.html'">
       <div class="MenuBarIcon"><i class="fas fa-phone"></i></div>
       <div class="MenuBarList">Contact Us</div>
     </div>
-    <div id="MenuBussiness">
+    <div onclick="window.location.href='./start_your_buss_today.html'" id="MenuBussiness">
       <div class="MenuBarIcon"><i class="far fa-building"></i></div>
       <div class="MenuBarList">Start Your Bussiness Today</div>
     </div>

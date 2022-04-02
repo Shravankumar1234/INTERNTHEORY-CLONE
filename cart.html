@@ -23,17 +23,18 @@
     #cart1 {
       display: flex;
       justify-content: space-evenly;
-    align-items:center ;
       height: 500px;
       width: 70%;
       margin: auto;
-      margin-top: 8%;
+      margin-top: 10%;
+      /* border: 1px solid red; */
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
         rgba(0, 0, 0, 0.23) 0px 3px 6px;
       margin-bottom: 40px;
     }
 
     #cart2 {
+      /* border: 1px solid black; */
       width: 40%;
       height: auto;
     }
@@ -43,26 +44,22 @@
     }
 
     #cart3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      /* border: 1px solid red; */
       width: 30%;
       height: auto;
       margin-right: 5%;
       margin-top: 7%;
       margin-left: 4%;
-      margin: auto;
     }
 
     #cartbtn {
       background-color: #df1e2e;
-      width: 80%;
+      width: 100%;
       height: 50px;
       border-radius: 5px;
       color: white;
+      margin-top: 10%;
       margin-left: 6%;
-      margin: auto;
-      margin-top: 20px;
       font-weight: bold;
       cursor: pointer;
     }
@@ -113,11 +110,9 @@
     .cart-a1 {
       border: 2px solid blue;
       color: blue;
+      text-align: center;
       height: 30px;
       width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     .cart-a1:hover {
       background-color: rgb(220, 243, 253);
@@ -137,8 +132,8 @@
 
     .popup .p1 {
       position: absolute;
-      top: 20%;
-      left: 55%;
+      top: 30%;
+      left: 50%;
       transform: translate(-70%, -110%);
       padding: 20px;
       width: 600px;
@@ -172,7 +167,6 @@
     }
 
     .closep:hover {
-      width: 20px;
       cursor: pointer;
       color: white;
       background: red;
@@ -235,23 +229,12 @@
     height: 30px;
 } */
     /* -------------addtocart css--------------------------------> */
-#allelems{
-border-right: 1px solid black;
-  width: 60%;
-  height: 90%;
-}
-
-
     #cartcors {
       margin-left: 20px;
       font-family: "Roboto", "Helvetica", "Arial", sans-serif;
       font-size: 1rem;
       height: 70%;
-      width: 90%;
-      overflow: scroll;
-    }
-    #cartcors::-webkit-scrollbar{
-      display: none;
+      width: 140%;
     }
     #cartcors > div {
       /* border: 1px solid red; */
@@ -298,10 +281,8 @@ border-right: 1px solid black;
     }
 
     .cart31 {
-      border-bottom:1px solid black;
       height: 18px;
       display: flex;
-      gap: 5px;
       justify-content: space-between;
       align-items: center;
     }
@@ -313,9 +294,7 @@ border-right: 1px solid black;
     #coupon {
       margin-top: 10px;
       display: flex;
-      align-items: baseline;
-      /* border: 1px solid red; */
-      /* flex-direction: column; */
+      flex-direction: column;
     }
     #coupon > button {
       padding: 10px;
@@ -326,7 +305,6 @@ border-right: 1px solid black;
       background-color: #df1e2e;
     }
     #coupon > input {
-      width: 80%;
       height: 25px;
       border: none;
       border-bottom: 1px solid black;
@@ -336,14 +314,12 @@ border-right: 1px solid black;
       justify-content: right;
     }
     #empty > button {
-      width: 18%;
-      padding: 5px;
+      padding: 8px;
       font-size: 18px;
       background-color: #df1e2e;
       color: white;
       border: none;
       border-radius: 5px;
-      margin-right: 30px;
     }
     #vis {
       display: none;
@@ -387,26 +363,26 @@ border-right: 1px solid black;
         </div>
         <div id="cartcors"></div>
         <div id="empty">
-          <button>Empty Cart</button>
+          <button>Empty</button>
         </div>
       </div>
 
-      <!-- <hr id="cart-hr" /> -->
+      <hr id="cart-hr" />
 
       <div id="cart3">
         <div class="cart31">
           <p>Amount</p>
-          <p id="amount"></p>
+          <h4 id="amount"></h4>
         </div>
         <hr />
         <div class="cart31">
           <p>CGST 9%</p>
-          <p id="cgst"></p>
+          <h4 id="cgst"></h4>
         </div>
         <hr />
         <div class="cart31">
           <p>SGST 9%</p>
-          <p id="sgst"></p>
+          <h4 id="sgst"></h4>
         </div>
         <hr />
         <div id="totaldiv">
@@ -416,8 +392,8 @@ border-right: 1px solid black;
         <div id="coupon">
           <input type="text" id="coupn" placeholder="Coupon Code" />
           <button id="go">GO</button>
+          <p id="vis">Coupon Added Successfuly !</p>
         </div>
-        <p id="vis">Coupon Added Successfuly !</p>
         <button id="cartbtn">Check Out</button>
         <h3 id="cart-h21">EMI Starting at 915/month ?</h3>
       </div>

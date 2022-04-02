@@ -23,7 +23,7 @@
     #cart1 {
       display: flex;
       justify-content: space-evenly;
-    align-items:center ;
+      align-items: center;
       height: 500px;
       width: 70%;
       margin: auto;
@@ -235,12 +235,11 @@
     height: 30px;
 } */
     /* -------------addtocart css--------------------------------> */
-#allelems{
-border-right: 1px solid black;
-  width: 60%;
-  height: 90%;
-}
-
+    #allelems {
+      border-right: 1px solid black;
+      width: 60%;
+      height: 90%;
+    }
 
     #cartcors {
       margin-left: 20px;
@@ -250,7 +249,7 @@ border-right: 1px solid black;
       width: 90%;
       overflow: scroll;
     }
-    #cartcors::-webkit-scrollbar{
+    #cartcors::-webkit-scrollbar {
       display: none;
     }
     #cartcors > div {
@@ -298,7 +297,7 @@ border-right: 1px solid black;
     }
 
     .cart31 {
-      border-bottom:1px solid black;
+      border-bottom: 1px solid black;
       height: 18px;
       display: flex;
       gap: 5px;
@@ -476,9 +475,8 @@ border-right: 1px solid black;
   //   addtocart finctinality_________________________>
   //   let cartcourses = JSON.parse(localStorage.getItem("courseArr"));
   //   console.log(cartcourses.length);
-  let cartcourses = JSON.parse(localStorage.getItem("courseArr"));
-  console.log(cartcourses.length);
 
+  let cartcourses = JSON.parse(localStorage.getItem("courseArr")) || [];
   let displaycart = (data) => {
     document.getElementById("cartcors").innerHTML = null;
 
@@ -520,7 +518,7 @@ border-right: 1px solid black;
   };
   displaycart(cartcourses);
 
-  var reduce = () => {
+  var reduce = (cartcourses) => {
     let final = cartcourses.reduce((acc, ele) => {
       return acc + Number(ele.price);
     }, 0);
@@ -533,12 +531,9 @@ border-right: 1px solid black;
     let total = document.getElementById("total");
     total.innerText = final + Math.ceil(final * 0.09) * 2;
 
-    let finalrs = Math.ceil(
-        (final + Math.ceil(final * 0.09) * 2) )
-        console.log(finalrs)
-   localStorage.setItem("finalamount",finalrs)
-
-
+    let finalrs = Math.ceil(final + Math.ceil(final * 0.09) * 2);
+    console.log(finalrs);
+    localStorage.setItem("finalamount", finalrs);
 
     document.getElementById("go").addEventListener("click", () => {
       jack(final);
@@ -557,29 +552,31 @@ border-right: 1px solid black;
     document.getElementById("num").innerText = cartcourses.length;
   };
 
-
   function jack(final) {
     if (document.getElementById("coupn").value == "masai20") {
-    
       document.getElementById("total").innerText = Math.ceil(
         (final + Math.ceil(final * 0.09) * 2) * 0.8
       );
       document.getElementById("vis").style.display = "block";
-
     }
 
-  let finalamount = Math.ceil(
-        (final + Math.ceil(final * 0.09) * 2) * 0.8 )
-        console.log(finalamount)
-localStorage.setItem("finalamount",finalamount)
+    let finalamount = Math.ceil((final + Math.ceil(final * 0.09) * 2) * 0.8);
+    console.log(finalamount);
+    localStorage.setItem("finalamount", finalamount);
   }
   document.getElementById("num").innerText = cartcourses.length;
 
   displaycart(cartcourses);
 
-
-
-
+  let empty = document.getElementById("empty");
+  empty.addEventListener("click", (event) => {
+    localStorage.removeItem("courseArr");
+    // document.getElementById("cartcors").innerHTML = null;
+    cartcourses = JSON.parse(localStorage.getItem("courseArr")) || [];
+    displaycart(cartcourses);
+    reduce(cartcourses);
+    document.getElementById("num").innerText = 0;
+  });
 </script>
 
 <script type="module" src="./Components/footerCode.js"></script>

@@ -47,7 +47,7 @@ input::-webkit-outer-spin-button {
 }
 #container > :nth-child(3) > input:focus {
   outline: none;
-  border: solid #fc2779;
+  border: solid #df1e2e;
 }
 #container > :nth-child(3) > :nth-child(1) {
   width: 60px;

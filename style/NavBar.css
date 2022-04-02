@@ -31,6 +31,7 @@ body {
   line-height: 40px;
   margin-right: 20px;
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 
 #MenuButton i {
@@ -44,7 +45,7 @@ body {
 #NavBarLogo img {
   width: 90%;
 }
-#NavBarBell{
+#NavBarBell {
   color: gray;
   width: 40px;
   height: 40px;
@@ -53,6 +54,7 @@ body {
   line-height: 40px;
   margin-right: 15px;
   font-size: 20px;
+  cursor: pointer;
 }
 #NavBarCart {
   font-size: 20px;
@@ -62,23 +64,27 @@ body {
   text-align: center;
   line-height: 40px;
   margin-right: 15px;
+  cursor: pointer;
 }
-#NavBarProfile{
+#NavBarProfile {
   width: 50px;
   height: 50px;
   display: flex;
   overflow: hidden;
   text-align: center;
   border-radius: 50%;
+  cursor: pointer;
 }
-#NavBarProfile img{
+#NavBarProfile img {
   margin-top: 10px;
   border-radius: 50%;
   width: 30px;
   height: 30px;
 }
 #NavBarCart:hover,
-#MenuButton:hover, #NavBarBell:hover,#NavBarProfile:hover{
+#MenuButton:hover,
+#NavBarBell:hover,
+#NavBarProfile:hover {
   background-color: rgb(240, 233, 233);
 }
 #NavBarSignIN button {

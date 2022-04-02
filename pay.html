@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment || Interntheory</title>
+    <link
+      rel="shortcut icon"
+      href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
+    />
 </head>
 <style>
 
@@ -368,7 +372,7 @@ white-space: nowrap;
     </div>
              
             <div id="cardDetails1234">Add New Card</div>
-            <form action="submit" id="cardDetails-form">
+            <form id="cardDetails-form">
                 <div class="cardDetails-input1">
                     <div>
                         <input type="number" placeholder="Card Numbver" class="cardDetailsinputtake">
@@ -403,7 +407,7 @@ white-space: nowrap;
                 </div>
                    
                 <a href="knowmore.html" id="cardDetails-knowMore">Know More</a>
-                <input type="submit" id="cardDetails-submit" value="">
+                <input type="submit"  id="cardDetails-submit" value="">
                 </form>
                
         </div>
@@ -417,9 +421,12 @@ white-space: nowrap;
 
 
 <script>
-
+let cardDetails_form = document.getElementById('cardDetails-form')
+cardDetails_form.addEventListener("submit",(event)=>{
+    event.preventDefault()
+    window.location.href='./otp.html';
+})
 let payrs = localStorage.getItem("finalamount")
-console.log(payrs)
  document.getElementById("payment-rs").innerText = "₹"+" "+payrs;
 
 document.getElementById("cardDetails-submit").value = "Pay"+" "+"₹"+" "+payrs;

@@ -1,187 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact || Interntheory</title>
     <link
       rel="shortcut icon"
       href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
     />
-    <link rel="stylesheet" href="./style/NavBar.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
-    <link rel="stylesheet" href="./style/Menu.css">
-    <link rel="stylesheet" href="./style/Footer.css">
-    <link rel="stylesheet" href="./style/changepassword.css">
+    <link rel="stylesheet" href="./style/NavBar.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="./style/Menu.css" />
+    <link rel="stylesheet" href="./style/Footer.css" />
+    <link rel="stylesheet" href="./style/changepassword.css" />
     <style>
-        #contmin{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap :20px;
-            justify-content: center;
-            padding-top: 2.5%;
-        }
-        #contmin > div{
-
+      #contmin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        padding-top: 2.5%;
+      }
+      #contmin > div {
         /* border: 1px solid red; */
-            height:800px;
-            /* gap: 20px; */
-            justify-content: center;
+        height: 800px;
+        /* gap: 20px; */
+        justify-content: center;
 
-            padding-left: 8%;
-            padding-right: 3%;
-        
-        }
-        #parag{
-            font-size: 20px;
-        }
-        #che{
-            font-size: 60px;
+        padding-left: 8%;
+        padding-right: 3%;
+      }
+      #parag {
+        font-size: 20px;
+      }
+      #che {
+        font-size: 60px;
 
-            padding-top: 2%;
+        padding-top: 2%;
 
-            line-height: 5px;
-        }
+        line-height: 5px;
+      }
 
-        /* __________________input____________________ */
-     #inc{
-          width: 100%;
-          height: 50px;
-          outline: 0;
-         border-width: 0 0 1px;
-
+      /* __________________input____________________ */
+      #inc {
+        width: 100%;
+        height: 50px;
+        outline: 0;
+        border-width: 0 0 1px;
       }
       #inc:hover {
-  border-color: black;
-  border-width: 0 0 2px;
-}
-#inc:focus {
-  border-color: rgb(45, 45, 151);
-}
-#csubmit{
-    width: 16%;
-    height: 40px;
-    justify-content: center;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-left: 40%;
-    margin-bottom: 7%;
-}
-#csubmit:hover{
-    background-color: brown;
-   
-}
-#cicon{
-    display: flex;
-    justify-content: center;
-    /* padding-left: 40%; */
-    gap: 10px;
-}
-#or{
-    padding-left: 48%;
-    color: #3C4858;
-    font-size: 18px;
-    
-}
-#call{
-    padding-left: 35%;
-    color: #3C4858;
-    font-size: 18px;
-}
-/*       ---------------- map ============------------ */
-#cifrem{
-    height: 100%;
-    width: 100%;
-    padding-top: 2%;
-    /* margin-top: 2%; */
-}
-#gmap{
-    padding-top: 8%;
-}
-/* ---------------- ----   first div ------------ */
-#fd{
-padding-top: 2%;
-/* padding: -25%; */
-}
-/* ////////////// icons style ///////////////// */
-#facebook{
-    color: #3B5998;
-    font-size: 25px;
-}
-#twit{
-
-    /* background-color: blue; */
-    font-size: 25px;
-    color: blue;
-
-}
-#insta{
-    font-size: 25px;
-    background: 000000014;
-   color: #8a3ab9 
-}
-#link{
-    font-size: 25px;
-    color: #345aac;
-}
-#what{
-    font-size: 25px;
-    color: rgb(73, 172, 139);
-}
-#cicon>div{
-    display: flex;
-    flex-direction: row;
-    /* height: 50px; */
-    font-size: 25px;
-    gap: 20px;
-}
-
-
-
+        border-color: black;
+        border-width: 0 0 2px;
+      }
+      #inc:focus {
+        border-color: rgb(45, 45, 151);
+      }
+      #csubmit {
+        width: 16%;
+        height: 40px;
+        justify-content: center;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-left: 40%;
+        margin-bottom: 7%;
+      }
+      #csubmit:hover {
+        background-color: brown;
+      }
+      #cicon {
+        display: flex;
+        justify-content: center;
+        /* padding-left: 40%; */
+        gap: 10px;
+      }
+      #or {
+        padding-left: 48%;
+        color: #3c4858;
+        font-size: 18px;
+      }
+      #call {
+        padding-left: 35%;
+        color: #3c4858;
+        font-size: 18px;
+      }
+      /*       ---------------- map ============------------ */
+      #cifrem {
+        height: 100%;
+        width: 100%;
+        padding-top: 2%;
+        /* margin-top: 2%; */
+      }
+      #gmap {
+        padding-top: 8%;
+      }
+      /* ---------------- ----   first div ------------ */
+      #fd {
+        padding-top: 2%;
+        /* padding: -25%; */
+      }
+      /* ////////////// icons style ///////////////// */
+      #facebook {
+        color: #3b5998;
+        font-size: 25px;
+      }
+      #twit {
+        /* background-color: blue; */
+        font-size: 25px;
+        color: blue;
+      }
+      #insta {
+        font-size: 25px;
+        background: 000000014;
+        color: #8a3ab9;
+      }
+      #link {
+        font-size: 25px;
+        color: #345aac;
+      }
+      #what {
+        font-size: 25px;
+        color: rgb(73, 172, 139);
+      }
+      #cicon > div {
+        display: flex;
+        flex-direction: row;
+        /* height: 50px; */
+        font-size: 25px;
+        gap: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="res"></div>
     <div id="NavBar"></div>
     <div id="MenuContainer"></div>
     <div id="contmin">
-        <div id="fd">
-            <p id="che">Contact</p>
-            <p id="parag">Have something to say? Give us a holler through any one of the ways below, and we’ll get back within 24 hours. On a side note, like the rest around us, we  have fallen victims to Social Media. Feel free to get in touch on Facebook,  LinkedIn or Instagram anytime!</p>
+      <div id="fd">
+        <p id="che">Contact</p>
+        <p id="parag">
+          Have something to say? Give us a holler through any one of the ways
+          below, and we’ll get back within 24 hours. On a side note, like the
+          rest around us, we have fallen victims to Social Media. Feel free to
+          get in touch on Facebook, LinkedIn or Instagram anytime!
+        </p>
 
-            <form action="" id="contactform">
-            <input required type="email" name="" id="inc" placeholder="Email Address" onfocus="this.placeholder = 'Enter Email Address' "><br>
-            <br>
-            <input required type="number" name="" id="inc" placeholder="Mobile no" onfocus="this.placeholder = 'Enter Mobile no' ">
-            <br>
-            <br>
-          <input required type="text" name="" id="inc" placeholder="Subject" onfocus="this.placeholder = 'Enter Subject' ">
-          <br>
-          <br>
-          <input required type="text" name="" id="inc" placeholder="Message" onfocus="this.placeholder = 'Enter Message' ">
-          <br>
-          <br>
-          <input type="submit" name="" id="csubmit" value="SUBMIT">
+        <form action="" id="contactform">
+          <input
+            required
+            type="email"
+            name=""
+            id="inc"
+            placeholder="Email Address"
+            onfocus="this.placeholder = 'Enter Email Address' "
+          /><br />
+          <br />
+          <input
+            required
+            type="number"
+            name=""
+            id="inc"
+            placeholder="Mobile no"
+            onfocus="this.placeholder = 'Enter Mobile no' "
+          />
+          <br />
+          <br />
+          <input
+            required
+            type="text"
+            name=""
+            id="inc"
+            placeholder="Subject"
+            onfocus="this.placeholder = 'Enter Subject' "
+          />
+          <br />
+          <br />
+          <input
+            required
+            type="text"
+            name=""
+            id="inc"
+            placeholder="Message"
+            onfocus="this.placeholder = 'Enter Message' "
+          />
+          <br />
+          <br />
+          <input type="submit" name="" id="csubmit" value="SUBMIT" />
         </form>
-        <div id="cicon"> 
-            <div id="facebook" onclick="window.location.href='https://www.facebook.com/interntheory'"><i class="fab fa-facebook-square"></i></div>
-            <div id="twit" onclick="window.location.href='https://twitter.com/InternTheory'"><i class="fab fa-twitter-square"></i></div>
-            <div id="insta" onclick="window.location.href='https://www.instagram.com/interntheory/'"><i class="fab fa-instagram-square"></i></div>
-            <div id="link" onclick="window.location.href='https://www.linkedin.com/company/interntheory/about/'"><i class="fab fa-linkedin"></i></div>
-            <div id="what" onclick="window.location.href='https://www.instagram.com/interntheory/'"><i class="fab fa-whatsapp-square"></i></div>
+        <div id="cicon">
+          <div
+            id="facebook"
+            onclick="window.location.href='https://www.facebook.com/interntheory'"
+          >
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div
+            id="twit"
+            onclick="window.location.href='https://twitter.com/InternTheory'"
+          >
+            <i class="fab fa-twitter-square"></i>
+          </div>
+          <div
+            id="insta"
+            onclick="window.location.href='https://www.instagram.com/interntheory/'"
+          >
+            <i class="fab fa-instagram-square"></i>
+          </div>
+          <div
+            id="link"
+            onclick="window.location.href='https://www.linkedin.com/company/interntheory/about/'"
+          >
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div
+            id="what"
+            onclick="window.location.href='https://www.instagram.com/interntheory/'"
+          >
+            <i class="fab fa-whatsapp-square"></i>
+          </div>
         </div>
         <p id="or">OR</p>
-        <p id="call"> Call:   +91 81047 73673</p>
-        </div>
-        <div id="cifrem">
-            <iframe width="600" height="500" id="gmap" src="https://maps.google.com/maps?q=Intern Theory Career Solutions LLP&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        </div>
+        <p id="call">Call: +91 81047 73673</p>
+      </div>
+      <div id="cifrem">
+        <iframe
+          width="600"
+          height="500"
+          id="gmap"
+          src="https://maps.google.com/maps?q=Intern Theory Career Solutions LLP&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+      </div>
     </div>
     <div id="Footer"></div>
-</body>
+  </body>
 </html>
 
 <script type="module" src="./Components/NavBarCode.js"></script>
@@ -189,13 +246,10 @@ padding-top: 2%;
 <script type="module" src="./Components/footerCode.js"></script>
 
 <script>
-    let cont = document.getElementById("contactform");
-    cont.addEventListener("submit",function(){
-        
-        alert("we will get back you soon")
-    })
-
-    
+  let cont = document.getElementById("contactform");
+  cont.addEventListener("submit", function () {
+    alert("we will get back you soon");
+  });
 </script>
 
 <script type="module" src="./Components/changePasswordCode.js"></script>

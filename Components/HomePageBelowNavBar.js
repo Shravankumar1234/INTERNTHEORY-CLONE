@@ -1,5 +1,5 @@
-const HomePage=()=>{
-    return `<div id="belowNavBarDiv1">
+const HomePage = () => {
+  return `<div id="belowNavBarDiv1">
     <div>
       <img src="https://assets.interntheory.com/creative/Homepage-Banner.png" />
     </div>
@@ -128,14 +128,14 @@ const HomePage=()=>{
       <h1>LET'S GET SOME<span>WORK EXPERIENCE</span></h1>
     </div>
     <div>
-      <div><img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg"></div>
-      <div><img src="	https://assets.interntheory.com/creative/home-internships/BD.jpg"></div>
-      <div><img src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"></div>
-      <div><img src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg"></div>
-      <div><img src="https://assets.interntheory.com/creative/home-internships/Finance.jpg"></div>
-      <div><img src="https://assets.interntheory.com/creative/home-internships/HR.jpg"></div>
-      <div><img src="https://assets.interntheory.com/creative/home-internships/Eng.jpg"></div>
-      <div><img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="	https://assets.interntheory.com/creative/home-internships/BD.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Finance.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/HR.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Eng.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg"></div>
       
     </div>
   </div>
@@ -144,13 +144,13 @@ const HomePage=()=>{
       <h1>HOW ABOUT<span>UPSKILLING ?</span></h1>
     </div>
     <div>
-      <div>
+      <div onclick="window.location.href='./onlinecourses.html'">
         <img src="https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg">
       </div>
-      <div>
+      <div onclick="window.location.href='./onlinecourses.html'">
         <img src="https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg">
       </div>
-      <div>
+      <div onclick="window.location.href='./onlinecourses.html'">
         <img src="https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg">
       </div>
     </div>
@@ -170,4 +170,4 @@ const HomePage=()=>{
     </div>
   </div>`;
 }
-export {HomePage}
+export { HomePage }

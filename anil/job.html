@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job || Interntheory</title>
+    <link
+      rel="shortcut icon"
+      href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
+    />
+    <link rel="stylesheet" href="./styles/internship.css" />
+    <link rel="stylesheet" href="./style/NavBar.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="stylesheet" href="./style/Menu.css" />
+    <link rel="stylesheet" href="./style/Footer.css" />
+  </head>
+  <body>
+    <!-- search bar is here---------------------------------------------- -->
+
+    <div id="searchboxes">
+      <div id="citydiv">
+        <input type="text" name="" id="cities" placeholder="Cities..." />
+        <button id="citybtn"><i class="fa-solid fa-angle-down"></i></button>
+        <div id="dropcity">
+          <div>
+            <input type="checkbox" name="" id="mu" onclick="city(`Mumbai`)" />
+            <label for="mu" onclick="city(`Mumbai`)">Mumbai</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="pu" onclick="city(`Pune`)" />
+            <label for="pu" onclick="city(`Pune`)">Pune</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="ba" onclick="city(`Banglore`)" />
+            <label for="ba" onclick="city(`Banglore`)">Banglore</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="na" onclick="city(`Nagpur`)" />
+            <label for="na" onclick="city(`Nagpur`)">Nagpur</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="de" onclick="city(`Delhi`)" />
+            <label for="de" onclick="city(`Delhi`)">Delhi</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="typediv">
+        <input type="text" name="" id="type" placeholder="Type..." />
+        <button id="typebtn">
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div id="droptype">
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="fu"
+              onclick="type(`Full Time`)"
+            />
+            <label for="fu" onclick="type(`Full Time`)">Full Time</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="pa"
+              onclick="type(`Part Time`)"
+            />
+            <label for="pa" onclick="type(`Part Time`)">Part Time</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="wf"
+              onclick="type(`Work From Home`)"
+            />
+            <label for="wf" onclick="type(`Work From Home`)"
+              >Work From Home</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="prefdiv">
+        <input type="text" name="" id="pref" placeholder="Preferences..." />
+        <button id="prefbtn">
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div id="droppref">
+          <div>
+            <input type="checkbox" name="" id="a" />
+            <label for="a">Finance</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="b" />
+            <label for="b">Engineering</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="c" />
+            <label for="c">Admin</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="d" />
+            <label for="d">Advertising</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="e" />
+            <label for="e">Digital Marketing</label>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="f" />
+            <label for="f">Marketing</label>
+          </div>
+        </div>
+      </div>
+      <p>OR</p>
+      <div id="last">
+        <div id="searchdiv">
+          <input type="text" name="" id="search" placeholder="Search..." />
+          <button id="searchbtn">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- all interships are here--------------------------------------------------- -->
+    <div id="NavBar"></div>
+    <div id="MenuContainer"></div>
+    <div id="alldiv">
+      <div id="leftimgd">
+        <img
+          id="leftdivimg"
+          src="https://assets.interntheory.com/creative/Internship_left_course_add_02.png"
+          alt=""
+        />
+      </div>
+      <div id="intermaindiv">
+        <div id="firstallintdiv">
+          <div id="allintimg">
+            <img
+              id="imgfd"
+              src="https://assets.interntheory.com/creative/logo.png"
+              alt=""
+            />
+          </div>
+          <div id="firstlastdiv">
+            <h3 id="titid">Fresher Job Jobs</h3>
+            <h4 id="companydiv">Develop Your Skillset</h4>
+            <p id="allpfdiv">Online Skill Development Programs</p>
+            <p id="allpfdiv">Taught by Industry Experts Internship</p>
+            <p id="allpfdiv">Certified Courses</p>
+            <p id="allpfdiv">Guaranteed Internship Opportunities</p>
+            <h4>Guaranteed Internship Opportunities</h4>
+          </div>
+          <div id="lastdivupgrade">
+            <p>4-6 Weeks</p>
+            <img
+              id="fdimg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUkoIeDu9oUrf2zVtZ9TN3-TOK7D2rLsWbQ&usqp=CAU"
+              alt=""
+            />
+            <button id="btnfd">UPGRADE SKILLS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Footer"></div>
+  </body>
+</html>
+
+<script src="./script/job.js"></script>
+
+<script type="module" src="./Components/NavBarCode.js"></script>
+
+<script type="module" src="./Components/MenuCode.js"></script>
+
+<script type="module" src="./Components/footerCode.js"></script>

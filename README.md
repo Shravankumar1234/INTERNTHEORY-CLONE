@@ -47,7 +47,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd Himalayausa_Clone_Project
+  cd Project - InternTheory
 ```
 Run index.html file on browser
 

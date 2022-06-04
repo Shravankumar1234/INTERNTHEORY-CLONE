@@ -1,0 +1,447 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#belowNavBar {
+  width: 100%;
+}
+
+#belowNavBarDiv1 {
+  width: 100%;
+  height: 59.3vh;
+  margin-top: 64px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  opacity: 100%;
+  /* background-image: url(https://assets.interntheory.com/creative/Homepage-Banner.png); */
+  background-color: #446478;
+  /* opacity: 0.4; */
+  display: flex;
+}
+
+/* #belowNavBarDiv1::before {
+      content: "";
+      position: absolute;
+      background-image: url(https://assets.interntheory.com/creative/Homepage-Banner.png);
+      top: 0;
+    } */
+#belowNavBarDiv1 > :nth-child(1) {
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#belowNavBarDiv1 > :nth-child(2) {
+  align-items: center;
+  height: 59.3vh;
+  width: 100%;
+  /* border: solid red; */
+}
+
+#belowNavBarDiv1 > :nth-child(2) > div {
+  opacity: 1;
+  text-align: center;
+  /* border: solid; */
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#belowNavBarDiv1 > :nth-child(2) > :nth-child(1) {
+  margin-top: 130px;
+}
+
+#belowNavBarDiv1 > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+  font-size: 24px;
+}
+
+#belowNavBarDiv1 > :nth-child(2) > :nth-child(1) > :nth-child(2) {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #df1e2e;
+  padding: 0px 10px;
+}
+
+#belowNavBarDiv1 > :nth-child(2) > :nth-child(2) {
+  margin: 5px 0px 15px 0px;
+}
+
+#belowNavBarDiv1 > :nth-child(2) > :nth-child(3) {
+  width: 82%;
+  /* background-color:rgb(255, 255, 255); */
+  background-color: #eff8ff;
+  height: 100px;
+  margin: auto;
+  border-radius: 10px;
+   margin-top: 27px;
+  /*padding: 20px 30px; */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+#HomeSearchContainer {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+#HomeSearchContainer > :nth-child(4) {
+  color: black;
+}
+#HomeSearchContainer > div {
+  margin: 0px 10px;
+}
+#HomeSearchCity > :nth-child(1) {
+  display: flex;
+  border-bottom: #999999 solid 2px;
+}
+#HomeSearchCity > :nth-child(1) > input {
+  background: none;
+  color: black;
+  outline: none;
+  border: none;
+  width: 95%;
+  font-size: 16px;
+  padding: 6px 0px 7px;
+}
+#HomeSearchCity > :nth-child(1) > :nth-child(2) i {
+  border: none;
+}
+#HomeSearchCity > :nth-child(1) > :nth-child(2) {
+  width: 15%;
+  border: none;
+  border-left: solid 2px;
+  height: 20px;
+  margin-top: 5px;
+  text-align: center;
+  color: #999999;
+}
+#HomeSearchCity :hover {
+  border-bottom: solid 2px black;
+  transition-duration: 0.2s;
+}
+#HomeSearchCity {
+  position: relative;
+  width: 22%;
+}
+#HomeSearchCity > :nth-child(2) > div:hover {
+  background-color: #ebe6e7;
+}
+#HomeSearchCity > :nth-child(2) > div {
+  font-size: 12px;
+  border-bottom: #99999990 solid 2px;
+  height: 30px;
+  line-height: 30px;
+}
+#HomeSearchCity > :nth-child(2) {
+  display: none;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  z-index: 3;
+  max-height: 170px;
+  overflow-y: scroll;
+  width: 100%;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}
+#HomeSearchType > :nth-child(1) {
+  display: flex;
+  border-bottom: #999999 solid 2px;
+}
+#HomeSearchType > :nth-child(1) > input {
+  background: none;
+  color: black;
+  outline: none;
+  border: none;
+  width: 95%;
+  font-size: 16px;
+  padding: 6px 0px 7px;
+}
+#HomeSearchType > :nth-child(1) > :nth-child(2) i {
+  border: none;
+}
+#HomeSearchType > :nth-child(1) > :nth-child(2) {
+  width: 15%;
+  border: none;
+  border-left: solid 2px;
+  height: 20px;
+  margin-top: 5px;
+  text-align: center;
+  color: #999999;
+}
+#HomeSearchType :hover {
+  border-bottom: solid 2px black;
+  transition-duration: 0.2s;
+}
+
+#HomeSearchType {
+  position: relative;
+  width: 22%;
+}
+#HomeSearchType > :nth-child(2) > div:hover {
+  background-color: #ebe6e7;
+}
+#HomeSearchType > :nth-child(2) > div {
+  font-size: 12px;
+  border-bottom: #99999990 solid 2px;
+  height: 30px;
+  line-height: 30px;
+}
+#HomeSearchType > :nth-child(2) {
+  display: none;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  z-index: 3;
+  max-height: 170px;
+  width: 100%;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}
+#HomeSearchPreferences > :nth-child(1) {
+  display: flex;
+  border-bottom: #999999 solid 2px;
+}
+#HomeSearchPreferences > :nth-child(1) > input {
+  background: none;
+  color: black;
+  outline: none;
+  border: none;
+  width: 95%;
+  font-size: 16px;
+  padding: 6px 0px 7px;
+}
+#HomeSearchPreferences > :nth-child(1) > :nth-child(2) i {
+  border: none;
+}
+#HomeSearchPreferences > :nth-child(1) > :nth-child(2) {
+  width: 15%;
+  border: none;
+  border-left: solid 2px;
+  height: 20px;
+  margin-top: 5px;
+  text-align: center;
+  color: #999999;
+}
+#HomeSearchPreferences :hover {
+  border-bottom: solid 2px black;
+  transition-duration: 0.2s;
+}
+#HomeSearchPreferences {
+  position: relative;
+  width: 22%;
+}
+#HomeSearchPreferences > :nth-child(2) > div:hover {
+  background-color: #ebe6e7;
+}
+#HomeSearchPreferences > :nth-child(2) > div {
+  font-size: 12px;
+  border-bottom: #99999990 solid 2px;
+  height: 30px;
+  line-height: 30px;
+}
+#HomeSearchPreferences > :nth-child(2) {
+  display: none;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  z-index: 4;
+  max-height: 170px;
+  overflow-y: scroll;
+  width: 100%;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}
+#HomeSearchDiv {
+  z-index: 3;
+  box-sizing: border-box;
+  padding: 0px 9px;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+#HomeSearchDiv > :nth-child(1) {
+  border: none;
+  outline: none;
+  color: #999999;
+  border-bottom: #999999 solid 2px;
+  height: 30px;
+  font-size: 16px;
+  width: 65%;
+}
+#HomeSearchDiv > :nth-child(1):hover {
+  border-bottom: solid 2px black;
+  transition-duration: 0.2s;
+}
+#HomeSearchDiv > :nth-child(2):hover {
+  background-color: #b11724;
+  transition-duration: 0.2s;
+}
+#HomeSearchDiv > :nth-child(2) {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 35%;
+  background-color: #df1e2e;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+#belowNavBarDiv2 {
+  width: 100%;
+  height: 60vh;
+  box-sizing: border-box;
+  padding: 0px 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#belowNavBarDiv2 > div {
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+#belowNavBarDiv2 > :nth-child(1) {
+  align-items: center;
+  font-size: 18px;
+}
+
+#belowNavBarDiv2 > :nth-child(1) > h2 {
+  border-bottom: solid 0.3px gray;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  margin-top: 160px;
+}
+
+#belowNavBarDiv2 > :nth-child(1) > h2 > span {
+  color: #df1e2e;
+  margin-left: 8px;
+}
+
+#belowNavBarDiv2 > :nth-child(1) > :nth-child(2) {
+  margin-top: 8px;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #3c4858;
+}
+#belowNavBarDiv2 > :nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  box-sizing: border-box;
+  padding: 30px 10px;
+  row-gap: 5px;
+}
+#belowNavBarDiv3 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 10% 90px 10%;
+  background-color: #f7fcfe;
+}
+#belowNavBarDiv3 > :nth-child(1) {
+  text-align: center;
+  font-size: 17px;
+}
+#belowNavBarDiv3 > :nth-child(1) > h1 > span {
+  color: #df1e2e;
+  margin-left: 8px;
+}
+#belowNavBarDiv3 > :nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+#belowNavBarDiv3 > :nth-child(2) > div {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#belowNavBarDiv3 > :nth-child(2) > div > img {
+  width: 100%;
+  height: 100%;
+}
+#belowNavBarDiv4 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 10% 90px 10%;
+
+  background-color: #e9e5e7;
+}
+#belowNavBarDiv4 > :nth-child(1) {
+  text-align: center;
+  font-size: 17px;
+}
+#belowNavBarDiv4 > :nth-child(1) > h1 > span {
+  color: #df1e2e;
+  margin-left: 8px;
+}
+#belowNavBarDiv4 > :nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#belowNavBarDiv4 > :nth-child(2) > div {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#belowNavBarDiv4 > :nth-child(2) > div > img {
+  width: 100%;
+  height: 100%;
+}
+#belowNavBarDiv5 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 10% 30px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+#belowNavBarDiv5 > div {
+  width: 50%;
+}
+#belowNavBarDiv5 > :nth-child(1) > div {
+  display: flex;
+  justify-content: center;
+}
+#belowNavBarDiv5 > :nth-child(1) > div > img {
+  width: 300px;
+}
+#belowNavBarDiv5 > :nth-child(2) {
+  font-size: 18px;
+}
+
+#belowNavBarDiv5 > :nth-child(2) > h2 {
+  border-bottom: solid 0.3px gray;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  margin-top: 100px;
+}
+
+#belowNavBarDiv5 > :nth-child(2) > h2 > span {
+  color: #df1e2e;
+  margin-left: 8px;
+}
+#belowNavBarDiv5 > :nth-child(2) > :nth-child(2) {
+  margin-top: 8px;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #3c4858;
+}

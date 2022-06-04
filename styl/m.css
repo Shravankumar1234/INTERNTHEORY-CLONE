@@ -1,0 +1,95 @@
+/* ///////////////////// start your business today ///////////////////////// */
+#sd {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+#start {
+  height: 220px;
+  width: 35%;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 4%;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+#sp {
+  display: flex;
+  font-size: 35px;
+  justify-content: center;
+  color: #3c4858;
+}
+#ss {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  color: #000000de;
+}
+#ssubmit {
+  background-color: blue;
+  color: white;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #ffff;
+  box-shadow: 2px 2px 5px 5px rgb(235 235 235);
+}
+
+/* ////////////////////////////  varify mobile   ////////////// */
+.form-popup {
+  display: none;
+  position: fixed;
+  height: 350px;
+  border: 3px solid #f1f1f1;
+  padding-top: 3%;
+  background-color: #ffff;
+  box-shadow: 2px 2px 5px 5px rgb(235 235 235);
+
+  width: 40%;
+  box-sizing: border-box;
+}
+#inp {
+  width: 8%;
+  height: 40px;
+  justify-content: center;
+  gap: 20px;
+}
+.open-btn {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  text-align: center;
+  padding-top: 1.5%;
+  margin-left: 35%;
+  box-shadow: 2px 2px 5px 5px rgb(235 235 235);
+}
+.btn-cancel {
+  justify-content: end;
+  border: none;
+  color: rgb(0, 89, 255);
+  font-size: 18px;
+}
+.mob {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.ver {
+  font-size: 25px;
+  padding-left: 6.5%;
+}
+.btn-cancel {
+  margin-left: 80%;
+}
+#myForm {
+  margin-left: 30%;
+  top: 100px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

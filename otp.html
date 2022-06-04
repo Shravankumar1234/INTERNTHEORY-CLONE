@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP || Interntheory</title>
+    <link
+      rel="shortcut icon"
+      href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
+    />
+    <link rel="stylesheet" href="./style/otp.css" />
+  </head>
+  <body>
+    <form id="myForm">
+      <div id="container">
+        <div>Mobile phone verification</div>
+        <div>
+          <div>Enter the code we just send on your mobile phone</div>
+          <div></div>
+        </div>
+        <div>
+          <input
+            type="text"
+            id="fir"
+            maxlength="1"
+            onkeyup="ChangeBlock(this,'sec')"
+          />
+          <input
+            type="number"
+            id="sec"
+            pattern="[0-9]{1}"
+            onkeyup="ChangeBlock(this,'thi')"
+          />
+          <input
+            type="number"
+            id="thi"
+            pattern="[0-9]{1}"
+            onkeyup="ChangeBlock(this,'for')"
+          />
+          <input type="number" id="for" pattern="[0-9]{1}" />
+        </div>
+        <div>Don't receive the code?</div>
+        <div>Resend</div>
+      </div>
+    </form>
+  </body>
+</html>
+<script>
+  function ChangeBlock(current, next) {
+    if (current.value.length) {
+      document.getElementById(next).focus();
+    }
+  }
+  let data = JSON.parse(localStorage.getItem("CurrentUser"));
+  var number = data.Number;
+  var otp = document.querySelector("#container > :nth-child(2)> :nth-child(2)");
+  otp.innerText = "+91" + number;
+
+  var fourthB = document.querySelector("#myForm");
+  fourthB.addEventListener("input", function () {
+    var firstBlock = document.querySelector(
+      "#container > :nth-child(3)> :nth-child(1)"
+    ).value;
+    var secondBlock = document.querySelector(
+      "#container > :nth-child(3)> :nth-child(2)"
+    ).value;
+    var thirdBlock = document.querySelector(
+      "#container > :nth-child(3)> :nth-child(3)"
+    ).value;
+    var fourthBlock = document.querySelector(
+      "#container > :nth-child(3)> :nth-child(4)"
+    ).value;
+    if (firstBlock == number[number.length - 4]) {
+      if (secondBlock == number[number.length - 3]) {
+        if (thirdBlock == number[number.length - 2]) {
+          if (fourthBlock == number[number.length - 1]) {
+            window.location.href = "./success.html";
+          }
+        }
+      }
+    }
+  });
+</script>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment || Interntheory</title>
+    <link
+      rel="shortcut icon"
+      href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico"
+    />
+</head>
+<style>
+
+
+
+    .popup .content
+    {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        
+        width: 100%;
+        height: 220px;
+        z-index: 2;
+        
+        padding: 20px;
+        box-sizing: border-box;
+
+    }
+
+    .popup .close-btn
+    {
+        position:absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background: #222;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+
+    }
+
+
+ .popup.active .content
+    {
+        transition: all 500ms ease-in-out;
+        transform: translate(-50%, -50%) scale(1);
+    } 
+
+
+
+
+
+    #mainpayment-page
+{
+    /* border: 1px solid green; */
+    height: auto;
+    width: auto;
+    background-position: 22rem;
+    margin-top: 4%;
+   
+
+}
+
+
+    #payment-header
+  {   
+         margin-left: 37.5%; 
+       
+        height: 200px;
+        width: 25%;
+        /* border: 1px solid red; */
+        background-color: #cd333f;
+        
+        
+    }
+
+    #payment-bar
+    {
+        margin-left: 95%;
+        color: rgb(224, 215, 215);        
+        cursor: pointer;
+    }
+
+    #payment-bar:hover
+    {
+        margin-left: 95%;
+        color: white;        
+    }
+    #payment-Intern
+    {
+        color: white;
+        margin-top: 5%;
+      margin-left: 10%;
+      font-weight: bold;
+      font-size: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;
+    white-space: nowrap;
+    }
+    #payment-pur
+    {  margin-left: 10%;
+    
+    color: #eeb3b8;
+    font-size: 15px;
+
+
+      text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;
+    }
+    #payment-rs
+    { 
+        color: white;
+        margin-top: 5%;
+     margin-left: 10%;
+       font-weight: bold;
+       font-size: 20px;
+overflow-x: hidden;
+overflow-y: hidden;
+text-align: left;
+text-overflow: ellipsis;
+text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;
+white-space: nowrap;
+    }
+    #payment-select
+    {    
+        width: 100%;
+        background-color: #b82e39;
+         margin-top: 13%;
+        height: 15%;
+        font-weight: bold;
+       
+        /* border: 1px solid white; */
+    }
+
+
+
+    #payment-language
+    {
+        height: 25px;
+        width: 25%;
+        background-color: #b82e39;
+         color: white;
+         border: none;
+         font-size: 14px;
+        padding-right: 14px;
+        position: relative;
+        text-align: left;
+        white-space: normal;
+        
+    }
+    #payment-language:hover
+    {
+        cursor: pointer;
+    }
+    .payment-options1
+    {
+       
+        background-color: white;
+        color: black;
+        width: 25%;
+        height: 200px;
+    }
+
+
+
+
+
+
+/* card details */
+
+
+
+
+   #cardDetails
+   {    
+       margin-left: 37.5%;
+      height: 400px;
+      width: 25%;
+      border: 1px solid rgb(235, 227, 227);
+
+   }
+
+   #cardDetails12
+   {
+       display: flex;
+     justify-content: space-between;
+       height: 30px;
+       width: 100%;
+     
+       
+   }
+
+   #cardDetails1234
+   {
+       margin-bottom: 15%;
+       padding-left: 5%;
+       color: rgb(55, 55, 55);
+       font-family: "lato", ubuntu, helvetica, sans-serif;
+       font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+   }
+
+   #cardDetails-form
+   {
+       margin-bottom: 5%;
+  
+   }
+
+   .cardDetails-input1
+   {
+       padding-left: 5%;
+       display: flex;
+       margin-bottom: 5%;
+       gap: 10%;
+   }
+
+   .cardDetailsinputtake
+   {
+       align-items: center;
+       outline: none;
+       border: white;
+   }
+
+   #cardDetails-knowMore
+   {
+       padding-left: 10%;
+       font-size: 14px;
+       font-family: "lato", ubuntu, helvetica, sans-serif;
+       cursor: pointer;
+       color: rgb(63, 113, 215);
+       
+   }
+   #cardDetails-submit
+   {
+       
+       width: 100%;
+       height: 50px;
+       background-color: #d42635;
+       color: white;
+       font-weight: bold;
+       margin-top: 35%;
+       font-size: 16px;
+       font-weight: 400;
+       height: 55px;
+       left: 0px;
+       line-height: 56px;
+      }
+
+    #cardDetails-submit:hover
+   {
+    background-color: #df4e5a;
+   }
+
+   #cardDetails-checkbox
+   {
+      font-size: large;
+   }
+
+
+   #cardDetails-checkboxDiv
+   {
+       padding-left: 5%;
+       color: rgb(55, 55, 55);
+        cursor: pointer;
+        font-family: "lato", ubuntu, helvetica, sans-serif;
+        font-feature-settings: "liga" 0;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: left
+       
+   }
+   #payment-anchor123
+{
+    color: rgb(179, 164, 164);
+    margin-left: 95%;
+    text-decoration: none;
+}
+
+#payment-anchor123:hover
+{
+    color: white;
+}
+
+#cardDetails-back
+{
+    text-decoration: none;
+}
+
+
+.cardDetails-label1
+{
+   position: absolute;
+   top: 10px;
+   left: 0;
+   color: #999;
+   transition: .5s;
+   pointer-events: none;
+}
+
+.cardDetailsinputtake:focus~label
+.cardDetailsinputtake:valid~label
+{
+    top: -12px;
+    left: 0;
+    color: #f7497d;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+
+
+.cardDetailsinputtake:focus~label
+.cardDetailsinputtake:valid~label
+{
+    border-bottom: 2px solid #f7497d;
+    
+}
+
+
+
+/* #cardDetails-label2
+{
+
+}
+#cardDetails-label3
+{
+
+}
+#cardDetails-label4
+{
+
+} */
+
+</style>
+<body>
+    <div id="cardDetails-popup">
+    <div class="content">
+        <!-- <div class="close-btn" onclick="togglePopup()">&times;  </div> -->
+        <div id="mainpayment-page">
+         <div id="payment-header">
+             <div id="payment-bar123" ><a id="payment-anchor123" href="cart.html">&times;</a></div>
+             <div id="payment-Intern">Intern Theory</div>
+             <div id="payment-pur">Purchase Description</div>
+             <div  id="payment-rs"></div>
+             <div id="payment-select">
+                 <select name="English" id="payment-language">
+                     <option value="0" class="payment-options1">English</option>
+                     <option value="1" class="payment-options1">বাংলা</option>
+                     <option value="2" class="payment-options1">हिंदी</option>
+                     <option value="3" class="payment-options1">मराठी</option>
+                     <option value="4" class="payment-options1">ગુજરાતી</option>
+                     <option value="5" class="payment-options1">தமிழ்</option>
+                     <option value="6" class="payment-options1">తెలుగు</option>
+                 </select>
+             </div>
+         </div>
+    <div id="cardDetails">
+        <div id="cardDetails12"> <a href="demo2.html" id="cardDetails-back"><div>< Card</div></a>
+    <div>+98334124235</div>
+    </div>
+             
+            <div id="cardDetails1234">Add New Card</div>
+            <form id="cardDetails-form">
+                <div class="cardDetails-input1">
+                    <div>
+                        <input type="number" placeholder="Card Numbver" class="cardDetailsinputtake">
+                       
+                    </div>
+                  
+                    <div>
+
+                        <input type="tel" placeholder="Expiry" class="cardDetailsinputtake">
+                       
+                    </div>
+                    
+                  
+                </div>
+               
+            
+                <div class="cardDetails-input1">
+                    <div>
+                        <input type="text" placeholder="Card Holder's name" class="cardDetailsinputtake">
+                   
+                    </div>
+                    <div>
+                        <input type="number" placeholder="CVV" class="cardDetailsinputtake">
+                       
+                    </div>
+                  
+              
+                </div>
+
+                <div id="cardDetails-checkboxDiv">
+                    <input type="checkbox" id="cardDetails-checkbox"> Save card securely for future payments
+                </div>
+                   
+                <a href="knowmore.html" id="cardDetails-knowMore">Know More</a>
+                <input type="submit"  id="cardDetails-submit" value="">
+                </form>
+               
+        </div>
+
+       
+        </div>  
+           
+    
+</body>
+</html>
+
+
+<script>
+let cardDetails_form = document.getElementById('cardDetails-form')
+cardDetails_form.addEventListener("submit",(event)=>{
+    event.preventDefault()
+    window.location.href='./otp.html';
+})
+let payrs = localStorage.getItem("finalamount")
+ document.getElementById("payment-rs").innerText = "₹"+" "+payrs;
+
+document.getElementById("cardDetails-submit").value = "Pay"+" "+"₹"+" "+payrs;
+
+</script>
+
+
+
+
+

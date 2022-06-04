@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+#NavBar {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+  padding: 0px 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#NavBar > div {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+#MenuButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 20px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+#MenuButton i {
+  font-size: 20px;
+}
+
+#NavBarLogo {
+  width: 80px;
+}
+
+#NavBarLogo img {
+  width: 90%;
+}
+#NavBarBell {
+  color: gray;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#NavBarCart {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#NavBarProfile {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#NavBarProfile img {
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+#NavBarCart:hover,
+#MenuButton:hover,
+#NavBarBell:hover,
+#NavBarProfile:hover {
+  background-color: rgb(240, 233, 233);
+}
+#NavBarSignIN button {
+  width: 84px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #df1e2e;
+}

@@ -1,0 +1,63 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+#Footer {
+  background-color: #446478;
+  box-sizing: border-box;
+  padding: 30px 10%;
+}
+#Footer > :nth-child(1) {
+  display: flex;
+  padding: 0px 0px 20px 0px;
+}
+#Footer > :nth-child(1) > :nth-child(1) {
+  width: 8%;
+  align-items: center;
+}
+#Footer > :nth-child(1) > :nth-child(1) > div {
+  text-align: center;
+}
+#Footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  margin-top: 32px;
+}
+#Footer > :nth-child(1) > :nth-child(1) i {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+#Footer > :nth-child(1) > :nth-child(2) {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+}
+#Footer > :nth-child(1) > :nth-child(2) > div {
+  width: 25%;
+}
+.FooterThreeHeading {
+  padding: 10px 0px;
+  border-bottom: solid 0.3px rgb(197, 194, 194);
+  color: white;
+  font-size: 14px;
+}
+.FooterList {
+  font-size: 14px;
+  padding: 5px 0px;
+  color: white;
+}
+#Footer > :nth-child(2) {
+  display: flex;
+  padding: 3px 0px;
+  color: white;
+  font-size: 14px;
+  justify-content: space-around;
+  border-bottom: solid 0.3px rgb(197, 194, 194);
+}
+#Footer > :nth-child(2) > div {
+  padding-top: 8px;
+}
+#Footer > :nth-child(3) {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+}

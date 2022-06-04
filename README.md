@@ -4,7 +4,7 @@
 
 # InternTheory - Clone
 
-InterTheory is an Ed-tech website which offers internships and different kinds of online and offline certified courses like web development, android development, Digital Marketing Course etc. which helps you developing your skillsets and getting you a job.
+InternTheory is an Ed-tech website which offers internships and different kinds of online and offline certified courses like web development, android development, Digital Marketing Course etc. which helps you developing your skillsets and getting you a job.
 
 
 ## Authors

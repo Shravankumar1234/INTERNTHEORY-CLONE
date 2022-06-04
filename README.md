@@ -41,7 +41,7 @@ https://superlative-sprite-7cfce0.netlify.app/
 Clone the project
 
 ```bash
-  git clone https://github.com/mayur-ms-2310/Himalayausa-clone.git
+  git clone https://github.com/Shravankumar1234/INTERNTHEORY-CLONE.git
 ```
 
 Go to the project directory

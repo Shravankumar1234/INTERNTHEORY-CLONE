@@ -19,7 +19,7 @@ InternTheory is an Ed-tech website which offers internships and different kinds 
 
 ## Demo
 
-https://superlative-sprite-7cfce0.netlify.app/
+https://musical-gumption-6441a4.netlify.app/
 
 
 ## Features

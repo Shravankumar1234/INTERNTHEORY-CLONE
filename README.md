@@ -1,5 +1,5 @@
 
-![Logo](https://assets.interntheory.com/creative/logo.png)
+![Logo](https://www.interntheory.com/assets/images/logo.png)
 
 
 # InternTheory - Clone
@@ -19,7 +19,7 @@ InternTheory is an Ed-tech website which offers internships and different kinds 
 
 ## Demo
 
-https://musical-gumption-6441a4.netlify.app/
+https://kaleidoscopic-macaron-d831fd.netlify.app/
 
 
 ## Features

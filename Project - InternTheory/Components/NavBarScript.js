@@ -4,7 +4,7 @@ const NavBar = () => {
       <i class="fas fa-bars"></i>
     </div>
     <div  onclick="window.location.href='./index.html'" id="NavBarLogo">
-      <img src="https://assets.interntheory.com/creative/logo.png"/>
+      <img src="https://www.interntheory.com/assets/images/logo.png"/>
     </div>
   </div>
   <div>

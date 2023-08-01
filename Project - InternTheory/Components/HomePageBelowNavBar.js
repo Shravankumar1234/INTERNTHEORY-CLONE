@@ -1,7 +1,7 @@
 const HomePage = () => {
   return `<div id="belowNavBarDiv1">
     <div>
-      <img src="https://assets.interntheory.com/creative/Homepage-Banner.png" />
+      <img src="https://www.interntheory.com/assets/Homepage-Banner.png" />
     </div>
     <div>
       <div>
@@ -62,64 +62,64 @@ const HomePage = () => {
     </div>
     <div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-1.png">
+        <img src="https://www.interntheory.com/assets/images/logo-1.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-2.png">
+        <img src="https://www.interntheory.com/assets/images/logo-2.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-3.png">
+        <img src="https://www.interntheory.com/assets/images/logo-3.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-4.png">
+        <img src="https://www.interntheory.com/assets/images/logo-4.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-5.png">
+        <img src=" https://www.interntheory.com/assets/images/logo-6.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-6.png">
+        <img src="https://www.interntheory.com/assets/images/logo-7.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-7.png">
+        <img src="https://www.interntheory.com/assets/images/logo-8.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-8.png">
+        <img src="https://www.interntheory.com/assets/images/logo-9.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-9.png">
+        <img src="https://www.interntheory.com/assets/images/logo-10.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-10.png">
+        <img src="https://www.interntheory.com/assets/images/logo-11.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-11.png">
+        <img src="https://www.interntheory.com/assets/images/logo-12.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-12.png">
+        <img src="https://www.interntheory.com/assets/images/logo-13.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-13.png">
+        <img src="https://www.interntheory.com/assets/images/logo-14.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-14.png">
+        <img src="https://www.interntheory.com/assets/images/logo-15.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-15.png">
+        <img src="https://www.interntheory.com/assets/images/logo-16.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-16.png">
+        <img src="https://www.interntheory.com/assets/images/logo-17.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-17.png">
+        <img src="https://www.interntheory.com/assets/images/logo-18.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-18.png">
+        <img src="https://www.interntheory.com/assets/images/logo-19.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-19.png">
+        <img src="https://www.interntheory.com/assets/images/logo-20.png">
       </div>
       <div>
-        <img src="https://assets.interntheory.com/creative/home-logo/logo-20.png">
+        <img src="https://www.interntheory.com/assets/images/logo-21.png">
       </div>
     </div>
   </div>
@@ -128,14 +128,14 @@ const HomePage = () => {
       <h1>LET'S GET SOME<span>WORK EXPERIENCE</span></h1>
     </div>
     <div>
-      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg"></div>
-      <div onclick="window.location.href='./internship.html'"><img src="	https://assets.interntheory.com/creative/home-internships/BD.jpg"></div>
-      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"></div>
-      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg"></div>
-      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Finance.jpg"></div>
-      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/HR.jpg"></div>
-      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/Eng.jpg"></div>
-      <div onclick="window.location.href='./internship.html'"><img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://www.interntheory.com/assets/images/Marketing-Icon.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://www.interntheory.com/assets/images/BD.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://www.interntheory.com/assets/images/Content-Writing.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://www.interntheory.com/assets/images/Graphic.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://www.interntheory.com/assets/images/Finance.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://www.interntheory.com/assets/images/HR.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://www.interntheory.com/assets/images/Eng.jpg"></div>
+      <div onclick="window.location.href='./internship.html'"><img src="https://www.interntheory.com/assets/images/All-Internships.jpg"></div>
       
     </div>
   </div>
@@ -145,20 +145,20 @@ const HomePage = () => {
     </div>
     <div>
       <div onclick="window.location.href='./onlinecourses.html'">
-        <img src="https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg">
+        <img src="https://www.interntheory.com/assets/images/Homepage-stock.jpg">
       </div>
       <div onclick="window.location.href='./onlinecourses.html'">
-        <img src="https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg">
+        <img src="https://www.interntheory.com/assets/images/Homepage-digital.jpg">
       </div>
       <div onclick="window.location.href='./onlinecourses.html'">
-        <img src="https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg">
+        <img src="https://www.interntheory.com/assets/images/Homepage-web.jpg">
       </div>
     </div>
   </div>
   <div id="belowNavBarDiv5">
     <div>
       <div>
-        <img src="https://assets.interntheory.com/creative/chart.png">
+        <img src="https://www.interntheory.com/assets/images/chart.png">
       </div>
     </div>
     <div>
